@@ -1,0 +1,681 @@
+{
+  "audited_at_utc": "2026-09-12T20:08:32.273876+00:00",
+  "note": "HTTP/content audit only; not semantic verification or end-to-end model testing.",
+  "sources": [
+    {
+      "source_id": "codex-cli",
+      "url": "https://learn.chatgpt.com/docs/developer-commands?surface=cli",
+      "fetch_url": "https://learn.chatgpt.com/docs/developer-commands?surface=cli",
+      "status": 200,
+      "final_url": "https://learn.chatgpt.com/docs/developer-commands?surface=cli",
+      "bytes": 1086034,
+      "sha256": "e6ff097be2c169f9890fa374bd49479aadb43776cef767885b486e55cc6a1080"
+    },
+    {
+      "source_id": "codex-config",
+      "url": "https://learn.chatgpt.com/docs/config-file/config-reference",
+      "fetch_url": "https://learn.chatgpt.com/docs/config-file/config-reference",
+      "status": 200,
+      "final_url": "https://learn.chatgpt.com/docs/config-file/config-reference",
+      "bytes": 1413258,
+      "sha256": "fab86575f12259c7c7cf8aa27f63b2426faf2f2ea973859f1fc056c140be1622"
+    },
+    {
+      "source_id": "claude-cli",
+      "url": "https://code.claude.com/docs/en/cli-reference",
+      "fetch_url": "https://code.claude.com/docs/en/cli-reference",
+      "status": 200,
+      "final_url": "https://code.claude.com/docs/en/cli-reference",
+      "bytes": 484170,
+      "sha256": "cf111677619fc853b001283e0573830ee172c10ccacc1412d93ad8798a89507a"
+    },
+    {
+      "source_id": "claude-interactive",
+      "url": "https://code.claude.com/docs/en/interactive-mode",
+      "fetch_url": "https://code.claude.com/docs/en/interactive-mode",
+      "status": 200,
+      "final_url": "https://code.claude.com/docs/en/interactive-mode",
+      "bytes": 740019,
+      "sha256": "1e9f012d582d5549da2a7d7c2817f978541dddd96827493f2a79ce8b2b81df70"
+    },
+    {
+      "source_id": "claude-loop",
+      "url": "https://code.claude.com/docs/en/scheduled-tasks",
+      "fetch_url": "https://code.claude.com/docs/en/scheduled-tasks",
+      "status": 200,
+      "final_url": "https://code.claude.com/docs/en/scheduled-tasks",
+      "bytes": 501280,
+      "sha256": "f4bfa5703816712305150dfe982f622042203737767f63732879e098ac9950a8"
+    },
+    {
+      "source_id": "claude-local",
+      "url": "https://docs.ollama.com/integrations/claude-code",
+      "fetch_url": "https://docs.ollama.com/integrations/claude-code",
+      "status": 200,
+      "final_url": "https://docs.ollama.com/integrations/claude-code",
+      "bytes": 324073,
+      "sha256": "011b443daa94cf832133beb0a1236bdfe3a7f0001c2b3f54d7d5a5b8866dc4f7"
+    },
+    {
+      "source_id": "grok-cli",
+      "url": "https://docs.x.ai/build/cli/reference",
+      "fetch_url": "https://docs.x.ai/build/cli/reference",
+      "status": 200,
+      "final_url": "https://docs.x.ai/build/cli/reference",
+      "bytes": 272880,
+      "sha256": "f4e8e3490aa1ba5ac04ccb44c1f121fa0d6daa62e0b5012f8ddd9693c7f4920e"
+    },
+    {
+      "source_id": "grok-config",
+      "url": "https://docs.x.ai/build/settings/reference",
+      "fetch_url": "https://docs.x.ai/build/settings/reference",
+      "status": 200,
+      "final_url": "https://docs.x.ai/build/settings/reference",
+      "bytes": 496925,
+      "sha256": "fb6635e5cbc7d20fcb949da2b3c51488a0e7c23a77fb28fe48529bf789d5975c"
+    },
+    {
+      "source_id": "grok-commands",
+      "url": "https://docs.x.ai/build/modes-and-commands",
+      "fetch_url": "https://docs.x.ai/build/modes-and-commands",
+      "status": 200,
+      "final_url": "https://docs.x.ai/build/modes-and-commands",
+      "bytes": 304261,
+      "sha256": "1cd869b2f414f4b0dbac398a652a49ed4763ebe3d2d209c032fcb191146416df"
+    },
+    {
+      "source_id": "grok-headless",
+      "url": "https://docs.x.ai/build/cli/headless-scripting",
+      "fetch_url": "https://docs.x.ai/build/cli/headless-scripting",
+      "status": 200,
+      "final_url": "https://docs.x.ai/build/cli/headless-scripting",
+      "bytes": 347148,
+      "sha256": "35ddae6630b9e122d97c083e0bf516a4f7b44fcac69a3882e82f2add4d52218a"
+    },
+    {
+      "source_id": "qwen-provider",
+      "url": "https://qwenlm.github.io/qwen-code-docs/en/users/configuration/model-providers/",
+      "fetch_url": "https://qwenlm.github.io/qwen-code-docs/en/users/configuration/model-providers/",
+      "status": 200,
+      "final_url": "https://qwenlm.github.io/qwen-code-docs/en/users/configuration/model-providers/",
+      "bytes": 844070,
+      "sha256": "5c64c4cc92da779bd06a4c460a4cd2b1c133512fb68e1f4d5be79d0ef227c159"
+    },
+    {
+      "source_id": "qwen-commands",
+      "url": "https://qwenlm.github.io/qwen-code-docs/en/users/features/commands/",
+      "fetch_url": "https://qwenlm.github.io/qwen-code-docs/en/users/features/commands/",
+      "status": 200,
+      "final_url": "https://qwenlm.github.io/qwen-code-docs/en/users/features/commands/",
+      "bytes": 912282,
+      "sha256": "8de4954f67cf10e9d387510425a830d6ed05b98553a45ab7fb17dc8a723416a6"
+    },
+    {
+      "source_id": "qwen-goal",
+      "url": "https://qwenlm.github.io/qwen-code-docs/en/users/features/goals/",
+      "fetch_url": "https://qwenlm.github.io/qwen-code-docs/en/users/features/goals/",
+      "status": 200,
+      "final_url": "https://qwenlm.github.io/qwen-code-docs/en/users/features/goals/",
+      "bytes": 385097,
+      "sha256": "5b7fb6a0fce1a4a387ce918a6a6c1fcc9a1dfd5020ac1ed78dbd877de469227b"
+    },
+    {
+      "source_id": "qwen-subagents",
+      "url": "https://qwenlm.github.io/qwen-code-docs/en/users/features/sub-agents/",
+      "fetch_url": "https://qwenlm.github.io/qwen-code-docs/en/users/features/sub-agents/",
+      "status": 200,
+      "final_url": "https://qwenlm.github.io/qwen-code-docs/en/users/features/sub-agents/",
+      "bytes": 645145,
+      "sha256": "d3b6ee333f849cbad60f49d88f04f669df015f179f690d59b7ca1357677ae1e3"
+    },
+    {
+      "source_id": "qwen-sandbox",
+      "url": "https://qwenlm.github.io/qwen-code-docs/en/users/features/sandbox/",
+      "fetch_url": "https://qwenlm.github.io/qwen-code-docs/en/users/features/sandbox/",
+      "status": 200,
+      "final_url": "https://qwenlm.github.io/qwen-code-docs/en/users/features/sandbox/",
+      "bytes": 432139,
+      "sha256": "80eccfa5c08ee264cab036f2e2d2bee3089aa08d239f21c275ceda15a380dccf"
+    },
+    {
+      "source_id": "qwen-headless",
+      "url": "https://github.com/QwenLM/qwen-code/blob/3ba01990e13e9e8e14e147b60add50e0f972431a/docs/users/features/headless.md",
+      "fetch_url": "https://raw.githubusercontent.com/QwenLM/qwen-code/3ba01990e13e9e8e14e147b60add50e0f972431a/docs/users/features/headless.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/QwenLM/qwen-code/3ba01990e13e9e8e14e147b60add50e0f972431a/docs/users/features/headless.md",
+      "bytes": 31290,
+      "sha256": "f070e2aa92a28e67d52d4adc72eb393652f365e22212a7943480a6a0e4234c01"
+    },
+    {
+      "source_id": "opencode-cli",
+      "url": "https://opencode.ai/docs/cli/",
+      "fetch_url": "https://opencode.ai/docs/cli/",
+      "status": 200,
+      "final_url": "https://opencode.ai/docs/cli/",
+      "bytes": 120167,
+      "sha256": "fb2f159f39c351b21682ed5e9b457ca5167b053ec71038653d984c4cb7fee1c2"
+    },
+    {
+      "source_id": "opencode-tui",
+      "url": "https://opencode.ai/docs/tui/",
+      "fetch_url": "https://opencode.ai/docs/tui/",
+      "status": 200,
+      "final_url": "https://opencode.ai/docs/tui/",
+      "bytes": 105011,
+      "sha256": "352ec3b19f0dd96984afa786288cddbc25e67cf87350d96807117d683824e7f9"
+    },
+    {
+      "source_id": "opencode-provider",
+      "url": "https://opencode.ai/docs/providers/",
+      "fetch_url": "https://opencode.ai/docs/providers/",
+      "status": 200,
+      "final_url": "https://opencode.ai/docs/providers/",
+      "bytes": 424678,
+      "sha256": "1186327accdd0418deda70f2f8fe588c381d50c8d79c4eaf2938445a1b032a8d"
+    },
+    {
+      "source_id": "opencode-agents",
+      "url": "https://opencode.ai/docs/agents/",
+      "fetch_url": "https://opencode.ai/docs/agents/",
+      "status": 200,
+      "final_url": "https://opencode.ai/docs/agents/",
+      "bytes": 179604,
+      "sha256": "47619aa22a989a50b74012dcdeea2f685ef0e136e7406046e9e533d1d463badd"
+    },
+    {
+      "source_id": "opencode-permission",
+      "url": "https://opencode.ai/docs/permissions/",
+      "fetch_url": "https://opencode.ai/docs/permissions/",
+      "status": 200,
+      "final_url": "https://opencode.ai/docs/permissions/",
+      "bytes": 88666,
+      "sha256": "e35fd2321f64c9c37d5b8b8fac0ea6561aea971f33df1a60cddb11d8087b0707"
+    },
+    {
+      "source_id": "opencode-v2",
+      "url": "https://opencode.ai/v2/docs/providers",
+      "fetch_url": "https://opencode.ai/v2/docs/providers",
+      "status": 200,
+      "final_url": "https://opencode.ai/v2/docs/providers",
+      "bytes": 77920,
+      "sha256": "0d06743dc21c45010abc23f02894c0ef7813224209d2185fd1a0a84c469eb183"
+    },
+    {
+      "source_id": "hermes-cli",
+      "url": "https://github.com/NousResearch/hermes-agent/blob/819988acb750836387fbb9d5d76203a9b3f530f4/website/docs/reference/cli-commands.md",
+      "fetch_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/819988acb750836387fbb9d5d76203a9b3f530f4/website/docs/reference/cli-commands.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/819988acb750836387fbb9d5d76203a9b3f530f4/website/docs/reference/cli-commands.md",
+      "bytes": 108315,
+      "sha256": "ea594c6728c857d6b4c22b5b31d56ee56f91f87566526edf96d7b0a441955e90"
+    },
+    {
+      "source_id": "hermes-slash",
+      "url": "https://github.com/NousResearch/hermes-agent/blob/819988acb750836387fbb9d5d76203a9b3f530f4/website/docs/reference/slash-commands.md",
+      "fetch_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/819988acb750836387fbb9d5d76203a9b3f530f4/website/docs/reference/slash-commands.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/819988acb750836387fbb9d5d76203a9b3f530f4/website/docs/reference/slash-commands.md",
+      "bytes": 43579,
+      "sha256": "2c299d3197753090f8be4f4301114ce4db11c6b5f5a1bd43646838f8abba5675"
+    },
+    {
+      "source_id": "hermes-local",
+      "url": "https://hermes-agent.nousresearch.com/docs/guides/local-ollama-setup",
+      "fetch_url": "https://hermes-agent.nousresearch.com/docs/guides/local-ollama-setup",
+      "status": 200,
+      "final_url": "https://hermes-agent.nousresearch.com/docs/guides/local-ollama-setup",
+      "bytes": 63865,
+      "sha256": "4ca3026983c1b4e571116969b60f1280c2a094457641a28bd8c996777df2bed5"
+    },
+    {
+      "source_id": "hermes-goal",
+      "url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/goals",
+      "fetch_url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/goals",
+      "status": 200,
+      "final_url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/goals",
+      "bytes": 70074,
+      "sha256": "76f9e0721dd7653f72ba07cd48280fc3797da72ab1b3f525a11ea18d00f0d60e"
+    },
+    {
+      "source_id": "hermes-readme",
+      "url": "https://github.com/NousResearch/hermes-agent/blob/819988acb750836387fbb9d5d76203a9b3f530f4/README.md",
+      "fetch_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/819988acb750836387fbb9d5d76203a9b3f530f4/README.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/NousResearch/hermes-agent/819988acb750836387fbb9d5d76203a9b3f530f4/README.md",
+      "bytes": 17688,
+      "sha256": "1d733df90c2836c1b9cd8d7307d2d222023456b7b55b5036c2fbb54fd8bcfdf4"
+    },
+    {
+      "source_id": "dsh-cli",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/apps/cli/reference/README.md",
+      "fetch_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/c291e7961a515f6d7af9304e7fd1d257929aef26/apps/cli/reference/README.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/c291e7961a515f6d7af9304e7fd1d257929aef26/apps/cli/reference/README.md",
+      "bytes": 18687,
+      "sha256": "14017bf0e661960d46103f87ad06a8c486d6271cc1e07b842b152a5ca677443b"
+    },
+    {
+      "source_id": "dsh-providers",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/docs/user/guide/providers.md",
+      "fetch_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/c291e7961a515f6d7af9304e7fd1d257929aef26/docs/user/guide/providers.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/c291e7961a515f6d7af9304e7fd1d257929aef26/docs/user/guide/providers.md",
+      "bytes": 13515,
+      "sha256": "6c1838eaaccbc74f1c09c62c90bdf7bab04d0dc0b268bcea097c39952143d332"
+    },
+    {
+      "source_id": "dsh-goal",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/packages/goal/command-goal/README.md",
+      "fetch_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/c291e7961a515f6d7af9304e7fd1d257929aef26/packages/goal/command-goal/README.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/c291e7961a515f6d7af9304e7fd1d257929aef26/packages/goal/command-goal/README.md",
+      "bytes": 8813,
+      "sha256": "c50879a497126962e655d89d56408939c2a6fce07a428b272c10097b9ade156b"
+    },
+    {
+      "source_id": "dsh-driver",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/packages/goal/goal-round-driver/README.md",
+      "fetch_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/c291e7961a515f6d7af9304e7fd1d257929aef26/packages/goal/goal-round-driver/README.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/c291e7961a515f6d7af9304e7fd1d257929aef26/packages/goal/goal-round-driver/README.md",
+      "bytes": 8818,
+      "sha256": "0146cbeadfbc26088579cb99ecf910327d7a4143d999d28f655e9dd9628d953e"
+    },
+    {
+      "source_id": "dsh-plan",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/packages/plan/plan-mode/README.md",
+      "fetch_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/c291e7961a515f6d7af9304e7fd1d257929aef26/packages/plan/plan-mode/README.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/c291e7961a515f6d7af9304e7fd1d257929aef26/packages/plan/plan-mode/README.md",
+      "bytes": 13182,
+      "sha256": "1773a27d4a8cf7d72fbb7f9edeb5b21dc3bf00b76a7b65949cf2d0ac310b01b3"
+    },
+    {
+      "source_id": "dsh-schedule",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/docs/user/guide/schedule.md",
+      "fetch_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/c291e7961a515f6d7af9304e7fd1d257929aef26/docs/user/guide/schedule.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/c291e7961a515f6d7af9304e7fd1d257929aef26/docs/user/guide/schedule.md",
+      "bytes": 3014,
+      "sha256": "4c046931b1d30d3e6a0fd9c700b9953a50bea6357eefcdc2bd7cff40de079ad6"
+    },
+    {
+      "source_id": "dsh-python",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/docs/user/guide/python-sdk.md",
+      "fetch_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/c291e7961a515f6d7af9304e7fd1d257929aef26/docs/user/guide/python-sdk.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/c291e7961a515f6d7af9304e7fd1d257929aef26/docs/user/guide/python-sdk.md",
+      "bytes": 7554,
+      "sha256": "ac0310d1cbe4901bfbac7c8eaf3f2e49cd237c00a0e591474607fcedecc0b5c6"
+    },
+    {
+      "source_id": "dsh-approval",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/docs/subsystems/permission-presets.md",
+      "fetch_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/c291e7961a515f6d7af9304e7fd1d257929aef26/docs/subsystems/permission-presets.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/c291e7961a515f6d7af9304e7fd1d257929aef26/docs/subsystems/permission-presets.md",
+      "bytes": 8031,
+      "sha256": "3a351878f2ff060d121ec786d396d64c108672de1b7b72fa05560a7e612c6752"
+    },
+    {
+      "source_id": "dsh-announcement",
+      "url": "https://deepseek.com/harness/en/",
+      "fetch_url": "https://deepseek.com/harness/en/",
+      "status": 200,
+      "final_url": "https://deepseek.com/harness/en/",
+      "bytes": 98095,
+      "sha256": "ac70ae9e5e949194f79948e669fc864c62b168582090ae637b12e0fbdd8668a5"
+    },
+    {
+      "source_id": "pi-readme",
+      "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/packages/coding-agent/README.md",
+      "fetch_url": "https://raw.githubusercontent.com/earendil-works/pi/71dca871bc80b6bc97be37f0ca3189399d651fff/packages/coding-agent/README.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/earendil-works/pi/71dca871bc80b6bc97be37f0ca3189399d651fff/packages/coding-agent/README.md",
+      "bytes": 33107,
+      "sha256": "b5daa09877da34d122818e03436b51755bc1b5044ae8ab810df63f02888f1ebe"
+    },
+    {
+      "source_id": "pi-models",
+      "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/packages/coding-agent/docs/models.md",
+      "fetch_url": "https://raw.githubusercontent.com/earendil-works/pi/71dca871bc80b6bc97be37f0ca3189399d651fff/packages/coding-agent/docs/models.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/earendil-works/pi/71dca871bc80b6bc97be37f0ca3189399d651fff/packages/coding-agent/docs/models.md",
+      "bytes": 25555,
+      "sha256": "bf322aa290929fb167c56ef024ce33db5752b9422fcb22a8a7cd8b8d6adae759"
+    },
+    {
+      "source_id": "pi-rpc",
+      "url": "https://pi.dev/docs/latest/rpc",
+      "fetch_url": "https://pi.dev/docs/latest/rpc",
+      "status": 200,
+      "final_url": "https://pi.dev/docs/latest/rpc",
+      "bytes": 302549,
+      "sha256": "e37444a372bbc213f96935248ff8bbcc28996b824ed37a74a6847c02f51495d2"
+    },
+    {
+      "source_id": "aider-models",
+      "url": "https://aider.chat/docs/llms.html",
+      "fetch_url": "https://aider.chat/docs/llms.html",
+      "status": 200,
+      "final_url": "https://aider.chat/docs/llms.html",
+      "bytes": 29001,
+      "sha256": "633cac70a9392f7e7e62e1520194fe235861fa69578e3fc66c2d921d1def55a4"
+    },
+    {
+      "source_id": "aider-openai",
+      "url": "https://aider.chat/docs/llms/openai-compat.html",
+      "fetch_url": "https://aider.chat/docs/llms/openai-compat.html",
+      "status": 200,
+      "final_url": "https://aider.chat/docs/llms/openai-compat.html",
+      "bytes": 27086,
+      "sha256": "351f7e09c6875be8f521ee3a7b329d22609c42703def9703421c46a4c1f323d3"
+    },
+    {
+      "source_id": "aider-options",
+      "url": "https://aider.chat/docs/config/options.html",
+      "fetch_url": "https://aider.chat/docs/config/options.html",
+      "status": 200,
+      "final_url": "https://aider.chat/docs/config/options.html",
+      "bytes": 134032,
+      "sha256": "c132a31adc40bb987527d0bfe93b1ca7446017abc4be28a86e1f3c3644da182f"
+    },
+    {
+      "source_id": "aider-commands",
+      "url": "https://aider.chat/docs/usage/commands.html",
+      "fetch_url": "https://aider.chat/docs/usage/commands.html",
+      "status": 200,
+      "final_url": "https://aider.chat/docs/usage/commands.html",
+      "bytes": 43205,
+      "sha256": "563e2628ea8b0f57cce03cff34c95744037e8667da117073d6457a30ccd57a07"
+    },
+    {
+      "source_id": "aider-test",
+      "url": "https://aider.chat/docs/usage/lint-test.html",
+      "fetch_url": "https://aider.chat/docs/usage/lint-test.html",
+      "status": 200,
+      "final_url": "https://aider.chat/docs/usage/lint-test.html",
+      "bytes": 31963,
+      "sha256": "7969f349eda044e32faea3703e62669417c881958793944dea7a920dffa5b58d"
+    },
+    {
+      "source_id": "aider-modes",
+      "url": "https://aider.chat/docs/usage/modes.html",
+      "fetch_url": "https://aider.chat/docs/usage/modes.html",
+      "status": 200,
+      "final_url": "https://aider.chat/docs/usage/modes.html",
+      "bytes": 38220,
+      "sha256": "5b93535463f31b1c35fdebf49c10a97b753c9b8a08900dfd054aa5bca146f23c"
+    },
+    {
+      "source_id": "oh-overview",
+      "url": "https://docs.openhands.dev/overview/introduction",
+      "fetch_url": "https://docs.openhands.dev/overview/introduction",
+      "status": 200,
+      "final_url": "https://docs.openhands.dev/overview/introduction",
+      "bytes": 309468,
+      "sha256": "d10e82864dc43775a4386a609d32188b156645dd9e640731a4497eb2dd32f1d6"
+    },
+    {
+      "source_id": "oh-cli",
+      "url": "https://docs.openhands.dev/openhands/usage/cli/command-reference",
+      "fetch_url": "https://docs.openhands.dev/openhands/usage/cli/command-reference",
+      "status": 200,
+      "final_url": "https://docs.openhands.dev/openhands/usage/cli/command-reference",
+      "bytes": 539721,
+      "sha256": "3df5f91682f72ec08a2071030cc4cd1f71c773e1e8b811144ba8deab7c4908dc"
+    },
+    {
+      "source_id": "oh-persist",
+      "url": "https://docs.openhands.dev/sdk/guides/convo-persistence",
+      "fetch_url": "https://docs.openhands.dev/sdk/guides/convo-persistence",
+      "status": 200,
+      "final_url": "https://docs.openhands.dev/sdk/guides/convo-persistence",
+      "bytes": 600355,
+      "sha256": "f938d6f171db1745503e024a2cbfe432f3e42486177b1e5e3c45e4571047fa41"
+    },
+    {
+      "source_id": "oh-api",
+      "url": "https://docs.openhands.dev/sdk/api-reference/openhands.sdk.conversation",
+      "fetch_url": "https://docs.openhands.dev/sdk/api-reference/openhands.sdk.conversation",
+      "status": 200,
+      "final_url": "https://docs.openhands.dev/sdk/api-reference/openhands.sdk.conversation",
+      "bytes": 675656,
+      "sha256": "13169be295c37a6012f9d84115fcac3d024c8ca8e36ed0c914a9d0c92f2f2ea5"
+    },
+    {
+      "source_id": "oh-security",
+      "url": "https://docs.openhands.dev/sdk/guides/security",
+      "fetch_url": "https://docs.openhands.dev/sdk/guides/security",
+      "status": 200,
+      "final_url": "https://docs.openhands.dev/sdk/guides/security",
+      "bytes": 1024602,
+      "sha256": "901f1b8b425f9f81817c71059773c51e6f1732c8695346057bd75d5918cfbeda"
+    },
+    {
+      "source_id": "oh-delegate",
+      "url": "https://docs.openhands.dev/sdk/guides/agent-file-based",
+      "fetch_url": "https://docs.openhands.dev/sdk/guides/agent-file-based",
+      "status": 200,
+      "final_url": "https://docs.openhands.dev/sdk/guides/agent-file-based",
+      "bytes": 775235,
+      "sha256": "e5cef62d074fd98c88822aa5ddc43270b3ea174aad5a704f157c5c06130abd33"
+    },
+    {
+      "source_id": "oh-sdk",
+      "url": "https://github.com/OpenHands/software-agent-sdk/blob/76e9e25078ed0ff7970f2c75e451274d3ed32bf2/README.md",
+      "fetch_url": "https://raw.githubusercontent.com/OpenHands/software-agent-sdk/76e9e25078ed0ff7970f2c75e451274d3ed32bf2/README.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/OpenHands/software-agent-sdk/76e9e25078ed0ff7970f2c75e451274d3ed32bf2/README.md",
+      "bytes": 10835,
+      "sha256": "95094c9745c7cc58136d4eaa1688fb6038aafefec2be05344293f6df7e55dbf8"
+    },
+    {
+      "source_id": "goose-cli",
+      "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/guides/goose-cli-commands.md",
+      "fetch_url": "https://raw.githubusercontent.com/aaif-goose/goose/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/guides/goose-cli-commands.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/aaif-goose/goose/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/guides/goose-cli-commands.md",
+      "bytes": 35464,
+      "sha256": "c09555c44f8a8b476d9179e9fd3c7bd8bae4ea0dec23a45981d7c2d7034aff35"
+    },
+    {
+      "source_id": "goose-provider",
+      "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/getting-started/providers.md",
+      "fetch_url": "https://raw.githubusercontent.com/aaif-goose/goose/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/getting-started/providers.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/aaif-goose/goose/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/getting-started/providers.md",
+      "bytes": 88687,
+      "sha256": "66b40f4470b0ac3978a0f6ee63f3e1c1fde4a3ef209c8b698946b7605c92d259"
+    },
+    {
+      "source_id": "goose-config",
+      "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/guides/config-files.md",
+      "fetch_url": "https://raw.githubusercontent.com/aaif-goose/goose/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/guides/config-files.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/aaif-goose/goose/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/guides/config-files.md",
+      "bytes": 12803,
+      "sha256": "17af5d5f57c4dab07a044f0b7ea99124cce39874940e7707ba69c9e6dad24f28"
+    },
+    {
+      "source_id": "vibe-readme",
+      "url": "https://github.com/mistralai/mistral-vibe/blob/19b5b74faa78d0816b8d4d4c7d7543fc3520678c/README.md",
+      "fetch_url": "https://raw.githubusercontent.com/mistralai/mistral-vibe/19b5b74faa78d0816b8d4d4c7d7543fc3520678c/README.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/mistralai/mistral-vibe/19b5b74faa78d0816b8d4d4c7d7543fc3520678c/README.md",
+      "bytes": 45725,
+      "sha256": "82205f70a6c8c678c8e6470d7785046cb0f433b34dabf08f0a7cd7ac26bf3e0e"
+    },
+    {
+      "source_id": "vibe-local",
+      "url": "https://docs.mistral.ai/vibe/code/cli/offline-models",
+      "fetch_url": "https://docs.mistral.ai/vibe/code/cli/offline-models",
+      "status": 200,
+      "final_url": "https://docs.mistral.ai/vibe/code/cli/offline-models",
+      "bytes": 1121682,
+      "sha256": "50d898f56270f4373614a30c1cd9116e900cf2880109ee91d83dae983f2ad65f"
+    },
+    {
+      "source_id": "vibe-commands",
+      "url": "https://docs.mistral.ai/vibe/code/cli/commands-shortcuts",
+      "fetch_url": "https://docs.mistral.ai/vibe/code/cli/commands-shortcuts",
+      "status": 200,
+      "final_url": "https://docs.mistral.ai/vibe/code/cli/commands-shortcuts",
+      "bytes": 1139618,
+      "sha256": "26eaccdb9e92a9947e31807e60683e961c391e905d6ad403d18ba74009d96503"
+    },
+    {
+      "source_id": "kilo-cli",
+      "url": "https://kilo.ai/docs/code-with-ai/platforms/cli-reference",
+      "fetch_url": "https://kilo.ai/docs/code-with-ai/platforms/cli-reference",
+      "status": 200,
+      "final_url": "https://kilo.ai/docs/code-with-ai/platforms/cli-reference",
+      "bytes": 166632,
+      "sha256": "b1dc67abf23ee71731980f4ba5cd04aa24b80a56f82b356602916d38f0ec57fd"
+    },
+    {
+      "source_id": "kilo-commands",
+      "url": "https://kilo.ai/docs/code-with-ai/platforms/cli",
+      "fetch_url": "https://kilo.ai/docs/code-with-ai/platforms/cli",
+      "status": 200,
+      "final_url": "https://kilo.ai/docs/code-with-ai/platforms/cli",
+      "bytes": 223180,
+      "sha256": "e800c787b9fddaa636abd45355d2eb9ff02cf6488c792033191d599dfd6ae95f"
+    },
+    {
+      "source_id": "kilo-local",
+      "url": "https://kilo.ai/docs/automate/extending/local-models",
+      "fetch_url": "https://kilo.ai/docs/automate/extending/local-models",
+      "status": 200,
+      "final_url": "https://kilo.ai/docs/automate/extending/local-models",
+      "bytes": 53242,
+      "sha256": "7b4f70d3591520049ccd1d34d8de5adaad46425c42487810d36b0ad93ebd431a"
+    },
+    {
+      "source_id": "kilo-models",
+      "url": "https://kilo.ai/docs/code-with-ai/agents/custom-models",
+      "fetch_url": "https://kilo.ai/docs/code-with-ai/agents/custom-models",
+      "status": 200,
+      "final_url": "https://kilo.ai/docs/code-with-ai/agents/custom-models",
+      "bytes": 135315,
+      "sha256": "42ff1883afa9413e65ffaefc5082822c2a3bdeb9ccba30175291074d218a0a7e"
+    },
+    {
+      "source_id": "cline-cli",
+      "url": "https://github.com/cline/cline/blob/cfe9cadab99617d5013bf89f07b079d105057791/docs/cli/cli-reference.mdx",
+      "fetch_url": "https://raw.githubusercontent.com/cline/cline/cfe9cadab99617d5013bf89f07b079d105057791/docs/cli/cli-reference.mdx",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/cline/cline/cfe9cadab99617d5013bf89f07b079d105057791/docs/cli/cli-reference.mdx",
+      "bytes": 9684,
+      "sha256": "a3f111d05da7ebcc46a4f695bc0dc2f8d65c174921a1b549377680984699a5f4"
+    },
+    {
+      "source_id": "cline-readme",
+      "url": "https://github.com/cline/cline/blob/cfe9cadab99617d5013bf89f07b079d105057791/apps/cli/README.md",
+      "fetch_url": "https://raw.githubusercontent.com/cline/cline/cfe9cadab99617d5013bf89f07b079d105057791/apps/cli/README.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/cline/cline/cfe9cadab99617d5013bf89f07b079d105057791/apps/cli/README.md",
+      "bytes": 16412,
+      "sha256": "94c3c1b240b5e8a971cc806876dde2e893c78c8cc0085efe23c961e113c197ad"
+    },
+    {
+      "source_id": "cline-local",
+      "url": "https://github.com/cline/cline/blob/cfe9cadab99617d5013bf89f07b079d105057791/docs/running-models-locally/overview.mdx",
+      "fetch_url": "https://raw.githubusercontent.com/cline/cline/cfe9cadab99617d5013bf89f07b079d105057791/docs/running-models-locally/overview.mdx",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/cline/cline/cfe9cadab99617d5013bf89f07b079d105057791/docs/running-models-locally/overview.mdx",
+      "bytes": 3559,
+      "sha256": "3bc569ca1c62efa25ab56694f1f6f8aea878bbec69640635b0d80df5b9a9c176"
+    },
+    {
+      "source_id": "gemini-cli",
+      "url": "https://geminicli.com/docs/cli/cli-reference/",
+      "fetch_url": "https://geminicli.com/docs/cli/cli-reference/",
+      "status": 200,
+      "final_url": "https://geminicli.com/docs/cli/cli-reference/",
+      "bytes": 119034,
+      "sha256": "7eb493bd3458e65a3ad067f3c45e2f22898210fefecd6317e606d8d531146161"
+    },
+    {
+      "source_id": "gemini-auth",
+      "url": "https://geminicli.com/docs/get-started/authentication/",
+      "fetch_url": "https://geminicli.com/docs/get-started/authentication/",
+      "status": 200,
+      "final_url": "https://geminicli.com/docs/get-started/authentication/",
+      "bytes": 164811,
+      "sha256": "7cf55ce5ccc904e9715dfa296a76326d0ee8dc10387d016804cfa514e996579b"
+    },
+    {
+      "source_id": "gemini-plan",
+      "url": "https://geminicli.com/docs/cli/plan-mode/",
+      "fetch_url": "https://geminicli.com/docs/cli/plan-mode/",
+      "status": 200,
+      "final_url": "https://geminicli.com/docs/cli/plan-mode/",
+      "bytes": 171871,
+      "sha256": "21b1f15bb62ecd005002643def8f1ddc20cc872d876cea3173c0a34a1d7566ca"
+    },
+    {
+      "source_id": "gemini-config",
+      "url": "https://geminicli.com/docs/reference/configuration/",
+      "fetch_url": "https://geminicli.com/docs/reference/configuration/",
+      "status": 200,
+      "final_url": "https://geminicli.com/docs/reference/configuration/",
+      "bytes": 507462,
+      "sha256": "e520589f601e2e4923a1eee5e0e1381ff15fd120cf644e2bf47530461284c423"
+    },
+    {
+      "source_id": "claude-commands",
+      "url": "https://code.claude.com/docs/en/commands",
+      "fetch_url": "https://code.claude.com/docs/en/commands",
+      "status": 200,
+      "final_url": "https://code.claude.com/docs/en/commands",
+      "bytes": 486526,
+      "sha256": "7d318f5213f5d1445def00508e896640b565a260c59a741f466d2b0afdf38129"
+    },
+    {
+      "source_id": "gemini-commands",
+      "url": "https://geminicli.com/docs/reference/commands/",
+      "fetch_url": "https://geminicli.com/docs/reference/commands/",
+      "status": 200,
+      "final_url": "https://geminicli.com/docs/reference/commands/",
+      "bytes": 180869,
+      "sha256": "33f9c2e1468515749299b5148b12b0305b9975078ee4eaf93d44b9d7e8d8394d"
+    },
+    {
+      "source_id": "oh-llm",
+      "url": "https://docs.openhands.dev/sdk/api-reference/openhands.sdk.llm",
+      "fetch_url": "https://docs.openhands.dev/sdk/api-reference/openhands.sdk.llm",
+      "status": 200,
+      "final_url": "https://docs.openhands.dev/sdk/api-reference/openhands.sdk.llm",
+      "bytes": 688261,
+      "sha256": "eff96a6f50afd4c91c31c222edac217394ec0eb1c7d617152d5fe6d274108175"
+    },
+    {
+      "source_id": "oh-condenser",
+      "url": "https://docs.openhands.dev/sdk/guides/context-condenser",
+      "fetch_url": "https://docs.openhands.dev/sdk/guides/context-condenser",
+      "status": 200,
+      "final_url": "https://docs.openhands.dev/sdk/guides/context-condenser",
+      "bytes": 477475,
+      "sha256": "2250c9194a8deb8134d7885ad9b7455812bf2c0a2ecc4afad558d4de97fe4a2c"
+    },
+    {
+      "source_id": "oh-workspace",
+      "url": "https://docs.openhands.dev/sdk/api-reference/openhands.sdk.workspace",
+      "fetch_url": "https://docs.openhands.dev/sdk/api-reference/openhands.sdk.workspace",
+      "status": 200,
+      "final_url": "https://docs.openhands.dev/sdk/api-reference/openhands.sdk.workspace",
+      "bytes": 448515,
+      "sha256": "de6b3fdc08279e7f375154c0b6ac04787db2933a84961b039c27fd0c333b2700"
+    },
+    {
+      "source_id": "goose-subagents",
+      "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/tutorials/subagents.md",
+      "fetch_url": "https://raw.githubusercontent.com/aaif-goose/goose/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/tutorials/subagents.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/aaif-goose/goose/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/tutorials/subagents.md",
+      "bytes": 13835,
+      "sha256": "9ceac93ffdf2f58aea9905e8529a49348e4a5c341be8d59dc03939a850c6aeb8"
+    }
+  ]
+}

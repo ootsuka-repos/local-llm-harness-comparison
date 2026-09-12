@@ -1,0 +1,110 @@
+{
+  "checked_on": "2026-09-13",
+  "note": "確認時のdefault branch参照点。安定リリース番号や実行検証済み版を意味しない。",
+  "repositories": [
+    {
+      "requested": "deepseek-ai/deepseek-harness",
+      "repo": "deepseek-ai/deepseek-harness",
+      "branch": "master",
+      "sha": "c291e7961a515f6d7af9304e7fd1d257929aef26",
+      "pushed_at": "2026-09-11T03:06:25Z",
+      "archived": false
+    },
+    {
+      "requested": "earendil-works/pi",
+      "repo": "earendil-works/pi",
+      "branch": "main",
+      "sha": "71dca871bc80b6bc97be37f0ca3189399d651fff",
+      "pushed_at": "2026-09-11T23:21:02Z",
+      "archived": false
+    },
+    {
+      "requested": "NousResearch/hermes-agent",
+      "repo": "NousResearch/hermes-agent",
+      "branch": "main",
+      "sha": "819988acb750836387fbb9d5d76203a9b3f530f4",
+      "pushed_at": "2026-09-12T19:39:03Z",
+      "archived": false
+    },
+    {
+      "requested": "mistralai/mistral-vibe",
+      "repo": "mistralai/mistral-vibe",
+      "branch": "main",
+      "sha": "19b5b74faa78d0816b8d4d4c7d7543fc3520678c",
+      "pushed_at": "2026-09-12T18:39:34Z",
+      "archived": false
+    },
+    {
+      "requested": "block/goose",
+      "repo": "aaif-goose/goose",
+      "branch": "main",
+      "sha": "50666ae0b9a51e260b52b7efbab2e4e020346e94",
+      "pushed_at": "2026-09-11T21:32:04Z",
+      "archived": false
+    },
+    {
+      "requested": "QwenLM/qwen-code",
+      "repo": "QwenLM/qwen-code",
+      "branch": "main",
+      "sha": "3ba01990e13e9e8e14e147b60add50e0f972431a",
+      "pushed_at": "2026-09-12T19:47:42Z",
+      "archived": false
+    },
+    {
+      "requested": "anomalyco/opencode",
+      "repo": "anomalyco/opencode",
+      "branch": "dev",
+      "sha": "95daf90670b7c039c436c85537da5fbfe2205b41",
+      "pushed_at": "2026-09-12T19:41:40Z",
+      "archived": false
+    },
+    {
+      "requested": "OpenHands/OpenHands",
+      "repo": "OpenHands/OpenHands",
+      "branch": "main",
+      "sha": "28464621d879e3e9b3ceeae9d70a71d96da6212d",
+      "pushed_at": "2026-09-12T16:10:52Z",
+      "archived": false
+    },
+    {
+      "requested": "OpenHands/software-agent-sdk",
+      "repo": "OpenHands/software-agent-sdk",
+      "branch": "main",
+      "sha": "76e9e25078ed0ff7970f2c75e451274d3ed32bf2",
+      "pushed_at": "2026-09-12T19:22:33Z",
+      "archived": false
+    },
+    {
+      "requested": "Aider-AI/aider",
+      "repo": "Aider-AI/aider",
+      "branch": "main",
+      "sha": "5dc9490bb35f9729ef2c95d00a19ccd30c26339c",
+      "pushed_at": "2026-05-22T14:02:20Z",
+      "archived": false
+    },
+    {
+      "requested": "Kilo-Org/kilocode",
+      "repo": "Kilo-Org/kilocode",
+      "branch": "main",
+      "sha": "c36e22634860e06e0aa63234fae37bbd83d3b182",
+      "pushed_at": "2026-09-12T17:16:37Z",
+      "archived": false
+    },
+    {
+      "requested": "google-gemini/gemini-cli",
+      "repo": "google-gemini/gemini-cli",
+      "branch": "main",
+      "sha": "9c1b0a610534d6f8120964cf2672c07807d8fc90",
+      "pushed_at": "2026-09-12T01:25:00Z",
+      "archived": false
+    },
+    {
+      "requested": "cline/cline",
+      "repo": "cline/cline",
+      "branch": "main",
+      "sha": "cfe9cadab99617d5013bf89f07b079d105057791",
+      "pushed_at": "2026-09-12T19:40:08Z",
+      "archived": false
+    }
+  ]
+}

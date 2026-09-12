@@ -1,0 +1,241 @@
+harness_id,harness,feature,kind,text,official_aliases,sources,checked_on
+codex,Codex CLI,start,CLI,`codex`,,https://learn.chatgpt.com/docs/developer-commands?surface=cli,2026-09-13
+codex,Codex CLI,model,MIXED,`--model MODEL` / `/model`,`-m` = `--model`,https://learn.chatgpt.com/docs/developer-commands?surface=cli,2026-09-13
+codex,Codex CLI,headless,CLI,"`codex exec ""PROMPT""`",`codex e` = `codex exec`,https://learn.chatgpt.com/docs/developer-commands?surface=cli,2026-09-13
+codex,Codex CLI,resume,CLI,`codex resume --last` / `codex resume ID`,,https://learn.chatgpt.com/docs/developer-commands?surface=cli,2026-09-13
+codex,Codex CLI,plan,SLASH,`/plan [PROMPT]`,,https://learn.chatgpt.com/docs/developer-commands?surface=cli,2026-09-13
+codex,Codex CLI,compact,SLASH,`/compact`,,https://learn.chatgpt.com/docs/developer-commands?surface=cli,2026-09-13
+codex,Codex CLI,approval,CLI,`--ask-for-approval never --sandbox workspace-write`。承認しない設定と隔離は別。,`-a` = `--ask-for-approval` ; `-s` = `--sandbox`,https://learn.chatgpt.com/docs/developer-commands?surface=cli,2026-09-13
+codex,Codex CLI,goal,SLASH,`/goal OBJECTIVE`、`/goal pause`、`/goal resume`。ローカルモデルでの継続品質は未実測。,,https://learn.chatgpt.com/docs/developer-commands?surface=cli,2026-09-13
+codex,Codex CLI,test,MODEL,テストを実行して失敗を修正するよう依頼。`codex review`はレビュー用でテスト合格ゲートではない。,,https://learn.chatgpt.com/docs/developer-commands?surface=cli,2026-09-13
+codex,Codex CLI,delegate,MIXED,エージェント機能・設定で委譲。`codex agents`はセッション閲覧で、spawnコマンドではない。,,https://learn.chatgpt.com/docs/developer-commands?surface=cli ; https://learn.chatgpt.com/docs/config-file/config-reference,2026-09-13
+codex,Codex CLI,schedule,UNVERIFIED,この比較ではローカルCLIの定期実行コマンド未確定。外部schedulerで`codex exec`を起動可能。,,https://learn.chatgpt.com/docs/developer-commands?surface=cli,2026-09-13
+codex,Codex CLI,limits,CONFIG,providerの`request_max_retries` / `stream_max_retries`。壁時計制限は外部プロセス管理で補う。,,https://learn.chatgpt.com/docs/config-file/config-reference,2026-09-13
+codex,Codex CLI,sandbox,CLI,`--sandbox workspace-write` / `read-only`。`--worktree`はGit分離でOS隔離ではない。,,https://learn.chatgpt.com/docs/developer-commands?surface=cli,2026-09-13
+codex,Codex CLI,extend,MIXED,`codex mcp`、`codex plugin`、`/skills`,,https://learn.chatgpt.com/docs/developer-commands?surface=cli,2026-09-13
+codex,Codex CLI,output,CLI,"`codex exec --json ""PROMPT""`",,https://learn.chatgpt.com/docs/developer-commands?surface=cli,2026-09-13
+claude-code,Claude Code,start,CLI,`claude`,,https://code.claude.com/docs/en/cli-reference,2026-09-13
+claude-code,Claude Code,model,MIXED,`--model MODEL` / `/model`,,https://code.claude.com/docs/en/cli-reference ; https://code.claude.com/docs/en/commands,2026-09-13
+claude-code,Claude Code,headless,CLI,"`claude --print ""PROMPT""`",`-p` = `--print`,https://code.claude.com/docs/en/cli-reference,2026-09-13
+claude-code,Claude Code,resume,CLI,`claude --continue` / `claude --resume ID`,`-c` = `--continue` ; `-r` = `--resume`,https://code.claude.com/docs/en/cli-reference,2026-09-13
+claude-code,Claude Code,plan,MIXED,`--permission-mode plan` / `/plan`,,https://code.claude.com/docs/en/cli-reference ; https://code.claude.com/docs/en/commands,2026-09-13
+claude-code,Claude Code,compact,SLASH,`/compact [INSTRUCTIONS]`,,https://code.claude.com/docs/en/commands,2026-09-13
+claude-code,Claude Code,approval,CLI,`--allowedTools`等で許可範囲を指定。全スキップは`--dangerously-skip-permissions`。,,https://code.claude.com/docs/en/cli-reference,2026-09-13
+claude-code,Claude Code,goal,SLASH,通常のagent loop。`/loop`は反復／定期実行で、独立した成果検証の保証ではない。,,https://code.claude.com/docs/en/scheduled-tasks,2026-09-13
+claude-code,Claude Code,test,MIXED,シェルでテスト→修正を依頼。`/verify`は明示起動の検証skillで、決定的な必須ゲートとは別。,,https://code.claude.com/docs/en/cli-reference ; https://code.claude.com/docs/en/commands,2026-09-13
+claude-code,Claude Code,delegate,MIXED,`--agents JSON` / agent定義ファイル、`/subtask TASK`でforked subagent。現行`/agents`は管理方法の案内。,,https://code.claude.com/docs/en/cli-reference ; https://code.claude.com/docs/en/commands,2026-09-13
+claude-code,Claude Code,schedule,SLASH,`/loop INTERVAL PROMPT`。セッション稼働中に発火。終了中は動かず、再開時の復元に例外あり。,,https://code.claude.com/docs/en/scheduled-tasks,2026-09-13
+claude-code,Claude Code,limits,CLI,printモードの`--max-turns N` / `--max-budget-usd N`。ローカルモデルの価格上限は時間制限の代用にしない。,,https://code.claude.com/docs/en/cli-reference,2026-09-13
+claude-code,Claude Code,sandbox,SLASH,`/sandbox`。権限スキップとsandboxを混同しない。,,https://code.claude.com/docs/en/commands,2026-09-13
+claude-code,Claude Code,extend,MIXED,`claude mcp`、`/mcp`、`/skills`、hooks / plugins,,https://code.claude.com/docs/en/cli-reference ; https://code.claude.com/docs/en/commands,2026-09-13
+claude-code,Claude Code,output,CLI,"`claude -p ""PROMPT"" --output-format json` / `stream-json`",,https://code.claude.com/docs/en/cli-reference,2026-09-13
+grok-build,Grok Build,start,CLI,`grok`,,https://docs.x.ai/build/cli/reference,2026-09-13
+grok-build,Grok Build,model,MIXED,`--model MODEL` / `/model MODEL`,`-m` = `--model` ; `/m` = `/model`,https://docs.x.ai/build/cli/reference ; https://docs.x.ai/build/modes-and-commands,2026-09-13
+grok-build,Grok Build,headless,CLI,"`grok --single ""PROMPT""`",`-p` = `--single`,https://docs.x.ai/build/cli/headless-scripting,2026-09-13
+grok-build,Grok Build,resume,CLI,`grok --continue` / `grok --resume ID`,`-c` = `--continue` ; `-r` = `--resume`,https://docs.x.ai/build/cli/reference,2026-09-13
+grok-build,Grok Build,plan,SLASH,`/plan [DESCRIPTION]` / `/view-plan`,,https://docs.x.ai/build/modes-and-commands,2026-09-13
+grok-build,Grok Build,compact,SLASH,`/compact [CONTEXT]`,,https://docs.x.ai/build/modes-and-commands,2026-09-13
+grok-build,Grok Build,approval,CLI,`--always-approve`。denyルールやhooksは別に適用。,`--yolo` = `--always-approve` ; `--dangerously-skip-permissions` は互換別名,https://docs.x.ai/build/cli/reference ; https://docs.x.ai/build/modes-and-commands,2026-09-13
+grok-build,Grok Build,goal,SLASH,`/workflow NAME`で保存workflowを実行・pause/resume。独立した完了検証の有無は未確認。,,https://docs.x.ai/build/modes-and-commands,2026-09-13
+grok-build,Grok Build,test,MODEL,シェルでテスト→修正を依頼。workflowに手順を記述可能。,,https://docs.x.ai/build/modes-and-commands,2026-09-13
+grok-build,Grok Build,delegate,MIXED,`GROK_SUBAGENTS=1`、taskツール。`/tasks`で確認。,,https://docs.x.ai/build/settings/reference ; https://docs.x.ai/build/modes-and-commands,2026-09-13
+grok-build,Grok Build,schedule,SLASH,`/loop [INTERVAL] PROMPT`、`/tasks`,,https://docs.x.ai/build/modes-and-commands,2026-09-13
+grok-build,Grok Build,limits,MIXED,`--max-turns N`、modelごとの`max_retries`,,https://docs.x.ai/build/cli/reference ; https://docs.x.ai/build/settings/reference,2026-09-13
+grok-build,Grok Build,sandbox,CLI,`--sandbox workspace` / `read-only` / `strict`。`--worktree`は別のGit分離。,,https://docs.x.ai/build/cli/reference ; https://docs.x.ai/build/settings/reference,2026-09-13
+grok-build,Grok Build,extend,MIXED,`grok mcp`、`grok plugin`、`/skills`、hooks,,https://docs.x.ai/build/cli/reference ; https://docs.x.ai/build/modes-and-commands,2026-09-13
+grok-build,Grok Build,output,CLI,`--output-format json` / `streaming-json`、`grok agent stdio`はACP,,https://docs.x.ai/build/cli/headless-scripting,2026-09-13
+qwen-code,Qwen Code,start,CLI,`qwen`,,https://github.com/QwenLM/qwen-code/blob/3ba01990e13e9e8e14e147b60add50e0f972431a/docs/users/features/headless.md,2026-09-13
+qwen-code,Qwen Code,model,MIXED,`--model MODEL` / `/model`,`-m` = `--model`,https://github.com/QwenLM/qwen-code/blob/3ba01990e13e9e8e14e147b60add50e0f972431a/docs/users/features/headless.md ; https://qwenlm.github.io/qwen-code-docs/en/users/features/commands/,2026-09-13
+qwen-code,Qwen Code,headless,CLI,"`qwen --prompt ""PROMPT""`",`-p` = `--prompt`,https://github.com/QwenLM/qwen-code/blob/3ba01990e13e9e8e14e147b60add50e0f972431a/docs/users/features/headless.md,2026-09-13
+qwen-code,Qwen Code,resume,CLI,`qwen --continue` / `qwen --resume ID`。headlessにも対応。,,https://github.com/QwenLM/qwen-code/blob/3ba01990e13e9e8e14e147b60add50e0f972431a/docs/users/features/headless.md,2026-09-13
+qwen-code,Qwen Code,plan,CLI,`--approval-mode plan`,,https://github.com/QwenLM/qwen-code/blob/3ba01990e13e9e8e14e147b60add50e0f972431a/docs/users/features/headless.md,2026-09-13
+qwen-code,Qwen Code,compact,SLASH,`/compress`,`/summarize` = `/compress`,https://qwenlm.github.io/qwen-code-docs/en/users/features/commands/,2026-09-13
+qwen-code,Qwen Code,approval,CLI,`--approval-mode yolo` / `--yolo`。`auto`は判定による承認で全許可とは異なる。,`-y` = `--yolo`,https://github.com/QwenLM/qwen-code/blob/3ba01990e13e9e8e14e147b60add50e0f972431a/docs/users/features/headless.md,2026-09-13
+qwen-code,Qwen Code,goal,MIXED,"`/goal OBJECTIVE`。headlessは`qwen -p ""/goal OBJECTIVE""`。完了・blocked申告を検証役が判定。",,https://github.com/QwenLM/qwen-code/blob/3ba01990e13e9e8e14e147b60add50e0f972431a/docs/users/features/headless.md ; https://qwenlm.github.io/qwen-code-docs/en/users/features/goals/,2026-09-13
+qwen-code,Qwen Code,test,MODEL,テスト合格をGoalの検証条件に記載。テスト実行・修正はモデルのツール操作。,,https://qwenlm.github.io/qwen-code-docs/en/users/features/goals/,2026-09-13
+qwen-code,Qwen Code,delegate,MIXED,`/agents create` / `manage`、`/fork DIRECTIVE`、`/coordinate TASK`。subagentのモデル・権限設定に依存。,,https://qwenlm.github.io/qwen-code-docs/en/users/features/commands/ ; https://qwenlm.github.io/qwen-code-docs/en/users/features/sub-agents/,2026-09-13
+qwen-code,Qwen Code,schedule,SLASH,`/loop INTERVAL PROMPT`は同梱skill。`/tasks` / `/workflows`で背景作業を確認。,,https://qwenlm.github.io/qwen-code-docs/en/users/features/commands/,2026-09-13
+qwen-code,Qwen Code,limits,CLI,`--max-session-turns N` / `--max-wall-time 1h` / `--max-tool-calls N`。serve/ACPへ同じ上限が適用されると仮定しない。,,https://github.com/QwenLM/qwen-code/blob/3ba01990e13e9e8e14e147b60add50e0f972431a/docs/users/features/headless.md,2026-09-13
+qwen-code,Qwen Code,sandbox,CLI,`--sandbox`。`--yolo`だけでは隔離されない。,,https://qwenlm.github.io/qwen-code-docs/en/users/features/sandbox/ ; https://github.com/QwenLM/qwen-code/blob/3ba01990e13e9e8e14e147b60add50e0f972431a/docs/users/features/headless.md,2026-09-13
+qwen-code,Qwen Code,extend,SLASH,`/mcp`、`/skills`。拡張の有効化状態に依存。,,https://qwenlm.github.io/qwen-code-docs/en/users/features/commands/,2026-09-13
+qwen-code,Qwen Code,output,CLI,`--output-format json` / `stream-json`,`-o` = `--output-format`,https://github.com/QwenLM/qwen-code/blob/3ba01990e13e9e8e14e147b60add50e0f972431a/docs/users/features/headless.md,2026-09-13
+opencode,OpenCode,start,CLI,`opencode`,,https://opencode.ai/docs/cli/,2026-09-13
+opencode,OpenCode,model,MIXED,`--model provider/MODEL` / `/models`,`-m` = `--model`,https://opencode.ai/docs/cli/ ; https://opencode.ai/docs/tui/,2026-09-13
+opencode,OpenCode,headless,CLI,"`opencode run ""PROMPT""`",,https://opencode.ai/docs/cli/,2026-09-13
+opencode,OpenCode,resume,CLI,`opencode --continue` / `opencode --session ID`。runにも指定可能。,`-c` = `--continue` ; `-s` = `--session`,https://opencode.ai/docs/cli/,2026-09-13
+opencode,OpenCode,plan,MIXED,`--agent plan` / TUIでTabによるagent切替,,https://opencode.ai/docs/agents/,2026-09-13
+opencode,OpenCode,compact,SLASH,`/compact`,`/summarize` = `/compact`,https://opencode.ai/docs/tui/,2026-09-13
+opencode,OpenCode,approval,MIXED,`--auto`は明示deny以外を自動承認。`permission`設定で個別制御。,,https://opencode.ai/docs/cli/ ; https://opencode.ai/docs/permissions/,2026-09-13
+opencode,OpenCode,goal,UNVERIFIED,通常のagent loop。Goalの独立検証付き継続は、本体の今回確認した資料では未確認。,,https://opencode.ai/docs/agents/,2026-09-13
+opencode,OpenCode,test,MODEL,bashでテスト→修正を依頼。formatterとテスト完了ゲートは別。,,https://opencode.ai/docs/agents/,2026-09-13
+opencode,OpenCode,delegate,MIXED,subagentを設定。`@general`等で利用。`opencode agent create`で作成。,,https://opencode.ai/docs/agents/ ; https://opencode.ai/docs/cli/,2026-09-13
+opencode,OpenCode,schedule,CLI,`opencode serve`＋`opencode run --attach URL`。定期起動は外側で管理。,,https://opencode.ai/docs/cli/,2026-09-13
+opencode,OpenCode,limits,CONFIG,agentの`steps`で推論反復を制限。プロセスの時間上限とは別。,,https://opencode.ai/docs/agents/,2026-09-13
+opencode,OpenCode,sandbox,UNVERIFIED,permissionは操作許可。OS隔離の汎用フラグはこの資料群で未確認。コンテナ等を外側で用意。,,https://opencode.ai/docs/permissions/,2026-09-13
+opencode,OpenCode,extend,MIXED,`opencode mcp add`、skills、plugins、カスタムコマンド,,https://opencode.ai/docs/cli/ ; https://opencode.ai/docs/tui/,2026-09-13
+opencode,OpenCode,output,CLI,"`opencode run --format json ""PROMPT""`",,https://opencode.ai/docs/cli/,2026-09-13
+hermes,Hermes Agent,start,CLI,`hermes` / `hermes chat`,,https://github.com/NousResearch/hermes-agent/blob/819988acb750836387fbb9d5d76203a9b3f530f4/website/docs/reference/cli-commands.md,2026-09-13
+hermes,Hermes Agent,model,MIXED,`hermes chat --model MODEL` / `/model`,`-m` = `--model`,https://github.com/NousResearch/hermes-agent/blob/819988acb750836387fbb9d5d76203a9b3f530f4/website/docs/reference/cli-commands.md ; https://github.com/NousResearch/hermes-agent/blob/819988acb750836387fbb9d5d76203a9b3f530f4/website/docs/reference/slash-commands.md,2026-09-13
+hermes,Hermes Agent,headless,CLI,"`hermes chat --oneshot --query ""PROMPT""`。現行では`-q`単独はTTYで対話を継続する。",`-q` = `--query`,https://github.com/NousResearch/hermes-agent/blob/819988acb750836387fbb9d5d76203a9b3f530f4/website/docs/reference/cli-commands.md,2026-09-13
+hermes,Hermes Agent,resume,CLI,`hermes --continue` / `hermes --resume ID`,`-c` = `--continue` ; `-r` = `--resume`,https://github.com/NousResearch/hermes-agent/blob/819988acb750836387fbb9d5d76203a9b3f530f4/website/docs/reference/cli-commands.md,2026-09-13
+hermes,Hermes Agent,plan,SLASH,`/plan [TASK]`で計画ファイルを作成,,https://github.com/NousResearch/hermes-agent/blob/819988acb750836387fbb9d5d76203a9b3f530f4/website/docs/reference/slash-commands.md,2026-09-13
+hermes,Hermes Agent,compact,SLASH,`/compress [focus TOPIC]`,,https://github.com/NousResearch/hermes-agent/blob/819988acb750836387fbb9d5d76203a9b3f530f4/website/docs/reference/slash-commands.md,2026-09-13
+hermes,Hermes Agent,approval,CLI,`--yolo`で承認をスキップ。通常のapproval設定とは区別。,,https://github.com/NousResearch/hermes-agent/blob/819988acb750836387fbb9d5d76203a9b3f530f4/website/docs/reference/cli-commands.md,2026-09-13
+hermes,Hermes Agent,goal,SLASH,`/goal OBJECTIVE`、`/goal pause` / `resume`。補助judgeで継続判断。ACPには未実装。,,https://hermes-agent.nousresearch.com/docs/user-guide/features/goals,2026-09-13
+hermes,Hermes Agent,test,SLASH,`/goal gate add COMMAND`。終了コード0を完了の必要条件にできる。通常のjudge判断も続く。,,https://hermes-agent.nousresearch.com/docs/user-guide/features/goals,2026-09-13
+hermes,Hermes Agent,delegate,MIXED,delegate機能。`/bg PROMPT`は別背景セッションで、Goalの自動タスク分割とは別。,,https://github.com/NousResearch/hermes-agent/blob/819988acb750836387fbb9d5d76203a9b3f530f4/README.md ; https://github.com/NousResearch/hermes-agent/blob/819988acb750836387fbb9d5d76203a9b3f530f4/website/docs/reference/slash-commands.md,2026-09-13
+hermes,Hermes Agent,schedule,CLI,`hermes cron create` / `list` / `tick`、`hermes gateway`。複数タスクは`hermes kanban`系。,,https://github.com/NousResearch/hermes-agent/blob/819988acb750836387fbb9d5d76203a9b3f530f4/website/docs/reference/cli-commands.md ; https://hermes-agent.nousresearch.com/docs/user-guide/features/goals,2026-09-13
+hermes,Hermes Agent,limits,MIXED,`--max-turns N`は一会話ターン内のtool反復。Goalは`goals.max_turns`、gateには別のtimeout/retry。,,https://github.com/NousResearch/hermes-agent/blob/819988acb750836387fbb9d5d76203a9b3f530f4/website/docs/reference/cli-commands.md ; https://hermes-agent.nousresearch.com/docs/user-guide/features/goals,2026-09-13
+hermes,Hermes Agent,sandbox,CONFIG,terminal backendにDocker / SSH等を選択。`--worktree`は別のGit分離。,,https://github.com/NousResearch/hermes-agent/blob/819988acb750836387fbb9d5d76203a9b3f530f4/README.md ; https://github.com/NousResearch/hermes-agent/blob/819988acb750836387fbb9d5d76203a9b3f530f4/website/docs/reference/cli-commands.md,2026-09-13
+hermes,Hermes Agent,extend,MIXED,skills / MCP / plugins。`/skills`で管理。,,https://github.com/NousResearch/hermes-agent/blob/819988acb750836387fbb9d5d76203a9b3f530f4/README.md ; https://github.com/NousResearch/hermes-agent/blob/819988acb750836387fbb9d5d76203a9b3f530f4/website/docs/reference/slash-commands.md,2026-09-13
+hermes,Hermes Agent,output,CLI,"`hermes -z ""PROMPT""`は最終テキスト出力。構造化制御はRPC/SDK面を別途使用。",,https://github.com/NousResearch/hermes-agent/blob/819988acb750836387fbb9d5d76203a9b3f530f4/website/docs/reference/cli-commands.md,2026-09-13
+deepseek-harness,DeepSeek Harness (dsh),start,CLI,`dsh web`（未導入なら`npx @deepseek-ai/dsh web`）,`dsh web` = `dsh --profile web`,https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/apps/cli/reference/README.md,2026-09-13
+deepseek-harness,DeepSeek Harness (dsh),model,UI,Webのモデル選択 / `settings.yaml`。`--model`をlauncherの共通引数とは扱わない。,,https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/docs/user/guide/providers.md ; https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/apps/cli/reference/README.md,2026-09-13
+deepseek-harness,DeepSeek Harness (dsh),headless,CLI,"`dsh --profile headless ""PROMPT""`。新規永続sessionを作る単発実行。",,https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/apps/cli/reference/README.md,2026-09-13
+deepseek-harness,DeepSeek Harness (dsh),resume,MIXED,Webの既存sessionまたはSDKで復元。共通CLIの`--resume`は資料で未確認。,,https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/docs/user/guide/python-sdk.md ; https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/apps/cli/reference/README.md,2026-09-13
+deepseek-harness,DeepSeek Harness (dsh),plan,SLASH,`/plan [PROMPT]` / `/plan off`（command adapterのあるUI）,,https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/packages/plan/plan-mode/README.md,2026-09-13
+deepseek-harness,DeepSeek Harness (dsh),compact,UNVERIFIED,compaction subsystemあり。共通CLI／slashの正式な呼出綴りは未確定。,,https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/apps/cli/reference/README.md,2026-09-13
+deepseek-harness,DeepSeek Harness (dsh),approval,CONFIG,permission presetで制御。base-backed新規sessionは`workspace-write`。汎用`--yolo`を想定しない。,,https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/apps/cli/reference/README.md ; https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/docs/subsystems/permission-presets.md,2026-09-13
+deepseek-harness,DeepSeek Harness (dsh),goal,MIXED,`/goal OBJECTIVE` / `pause` / `resume`。Goalサービス＋command＋round-driverの構成に依存。,,https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/packages/goal/command-goal/README.md ; https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/packages/goal/goal-round-driver/README.md,2026-09-13
+deepseek-harness,DeepSeek Harness (dsh),test,MODEL,シェルで検証。Goal保存自体には独立した成果検証の保証はない。,,https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/apps/cli/reference/README.md ; https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/packages/goal/goal-round-driver/README.md,2026-09-13
+deepseek-harness,DeepSeek Harness (dsh),delegate,EXTENSION,subagentプラグイン構成。Codex / Claude委譲は別の任意bundleで、ローカルモデル利用の必須条件ではない。,,https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/apps/cli/reference/README.md,2026-09-13
+deepseek-harness,DeepSeek Harness (dsh),schedule,UI,Schedule UI／schedule subsystem。配置したprofileと稼働ホストに依存。,,https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/docs/user/guide/schedule.md,2026-09-13
+deepseek-harness,DeepSeek Harness (dsh),limits,CONFIG,Goalの`maxGoalRounds`（既定256）。round-driverはcap到達等で停止。,,https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/packages/goal/goal-round-driver/README.md,2026-09-13
+deepseek-harness,DeepSeek Harness (dsh),sandbox,CONFIG,sandbox / permission presetを構成。Planモードだけではツールを強制制限しない。,,https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/packages/plan/plan-mode/README.md ; https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/docs/subsystems/permission-presets.md,2026-09-13
+deepseek-harness,DeepSeek Harness (dsh),extend,CLI,`dsh plugin --profile NAME add PACKAGE`。MCP clientは同梱、serverは既定で未有効。,,https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/apps/cli/reference/README.md,2026-09-13
+deepseek-harness,DeepSeek Harness (dsh),output,CLI,headlessはstdoutに最終文。`dsh --profile sdk`はJSON-RPC、`--profile acp`はACP。,,https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/apps/cli/reference/README.md,2026-09-13
+pi,Pi (TypeScript本家),start,CLI,`pi`,,https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/packages/coding-agent/README.md,2026-09-13
+pi,Pi (TypeScript本家),model,MIXED,`--provider PROVIDER --model MODEL` / `/model`,,https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/packages/coding-agent/README.md,2026-09-13
+pi,Pi (TypeScript本家),headless,CLI,"`pi --print ""PROMPT""`",`-p` = `--print`,https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/packages/coding-agent/README.md,2026-09-13
+pi,Pi (TypeScript本家),resume,CLI,`pi --continue`、`pi --resume`でpicker、`pi --session PATH_OR_ID`で指定,`-c` = `--continue` ; `-r` = `--resume`,https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/packages/coding-agent/README.md,2026-09-13
+pi,Pi (TypeScript本家),plan,EXTENSION,標準Planモードなし。計画ファイル、extension / packageで追加。,,https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/packages/coding-agent/README.md,2026-09-13
+pi,Pi (TypeScript本家),compact,SLASH,`/compact [PROMPT]`、`/tree`で会話の分岐へ移動,,https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/packages/coding-agent/README.md,2026-09-13
+pi,Pi (TypeScript本家),approval,NONE,標準でツール承認popupなし。`--approve`はproject trust用でツール承認とは別。,,https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/packages/coding-agent/README.md,2026-09-13
+pi,Pi (TypeScript本家),goal,EXTENSION,標準Goal機構としては扱わない。RPC / extensionで継続制御を実装。,,https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/packages/coding-agent/README.md ; https://pi.dev/docs/latest/rpc,2026-09-13
+pi,Pi (TypeScript本家),test,MODEL,bashでテスト→修正を依頼。完了ゲートはextension／外部runnerで実装。,,https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/packages/coding-agent/README.md,2026-09-13
+pi,Pi (TypeScript本家),delegate,EXTENSION,標準subagentなし。extension、package、複数Piプロセスで構成。,,https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/packages/coding-agent/README.md,2026-09-13
+pi,Pi (TypeScript本家),schedule,EXTENSION,標準background bashなし。tmuxや外部schedulerで構成。,,https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/packages/coding-agent/README.md,2026-09-13
+pi,Pi (TypeScript本家),limits,UNVERIFIED,汎用max-turnsフラグは今回のCLI一覧で未確認。RPCのabortや外部timeoutで補う。,,https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/packages/coding-agent/README.md ; https://pi.dev/docs/latest/rpc,2026-09-13
+pi,Pi (TypeScript本家),sandbox,EXTENSION,標準のOS隔離は外部containerまたはextensionで構成。,,https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/packages/coding-agent/README.md,2026-09-13
+pi,Pi (TypeScript本家),extend,MIXED,`pi install PACKAGE`。標準MCPなし、extensionで追加。skillsは`/skill:NAME`。,,https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/packages/coding-agent/README.md,2026-09-13
+pi,Pi (TypeScript本家),output,CLI,"`pi --mode json -p ""PROMPT""` / `pi --mode rpc`",,https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/packages/coding-agent/README.md ; https://pi.dev/docs/latest/rpc,2026-09-13
+aider,Aider,start,CLI,`aider`,,https://aider.chat/docs/config/options.html,2026-09-13
+aider,Aider,model,MIXED,`--model MODEL` / `/model MODEL`,,https://aider.chat/docs/config/options.html ; https://aider.chat/docs/usage/commands.html,2026-09-13
+aider,Aider,headless,CLI,"`aider --message ""PROMPT""` / `--message-file FILE`",`-m` / `--msg` = `--message` ; `-f` = `--message-file`,https://aider.chat/docs/config/options.html,2026-09-13
+aider,Aider,resume,CLI,`--restore-chat-history`。履歴復元であり、停止した任意プロセスを復旧するものではない。,,https://aider.chat/docs/config/options.html,2026-09-13
+aider,Aider,plan,SLASH,`/ask`で相談、`/architect`で設計→editorへ。専用のOS読み取り制限とは別。,,https://aider.chat/docs/usage/modes.html,2026-09-13
+aider,Aider,compact,UNVERIFIED,自動履歴要約あり。共通`/compact`の存在は今回のcommand一覧で確認できない。,,https://aider.chat/docs/config/options.html ; https://aider.chat/docs/usage/commands.html,2026-09-13
+aider,Aider,approval,CLI,`--yes-always`で確認へ自動Yes,,https://aider.chat/docs/config/options.html,2026-09-13
+aider,Aider,goal,EXTENSION,一依頼の編集と修正。大きい目標のキュー／継続／完了判定は外部runnerで補う。,,https://aider.chat/docs/config/options.html ; https://aider.chat/docs/usage/modes.html,2026-09-13
+aider,Aider,test,MIXED,`--auto-test --test-cmd COMMAND`、`/test COMMAND`。編集後lintと失敗修正あり。,,https://aider.chat/docs/usage/lint-test.html,2026-09-13
+aider,Aider,delegate,NONE,Architect / Editorのモデル分離。独立workerへのsubagent委譲とは別。,,https://aider.chat/docs/usage/modes.html,2026-09-13
+aider,Aider,schedule,EXTENSION,`--message-file FILE`を外部schedulerから実行,,https://aider.chat/docs/config/options.html,2026-09-13
+aider,Aider,limits,CLI,`--max-chat-history-tokens N`は履歴量。壁時計・全作業の反復上限とは別。,,https://aider.chat/docs/config/options.html,2026-09-13
+aider,Aider,sandbox,UNVERIFIED,組み込みOS隔離は今回のoption一覧で未確認。外部container等で構成。,,https://aider.chat/docs/config/options.html,2026-09-13
+aider,Aider,extend,CLI,`--load FILE`でchat command読込。MCPは今回の標準一覧で未確認。,,https://aider.chat/docs/config/options.html,2026-09-13
+aider,Aider,output,CLI,`--chat-history-file FILE` / `--llm-history-file FILE`。汎用JSON event streamとは別。,,https://aider.chat/docs/config/options.html,2026-09-13
+openhands-cli,OpenHands CLI (legacy),start,CLI,`openhands`,,https://docs.openhands.dev/openhands/usage/cli/command-reference,2026-09-13
+openhands-cli,OpenHands CLI (legacy),model,MIXED,Settings、または`LLM_MODEL`＋`--override-with-envs`,,https://docs.openhands.dev/openhands/usage/cli/command-reference,2026-09-13
+openhands-cli,OpenHands CLI (legacy),headless,CLI,"`openhands --headless --task ""PROMPT""`",`-t` = `--task` ; `-f` = `--file`,https://docs.openhands.dev/openhands/usage/cli/command-reference,2026-09-13
+openhands-cli,OpenHands CLI (legacy),resume,CLI,`openhands --resume --last` / `openhands --resume ID`,,https://docs.openhands.dev/openhands/usage/cli/command-reference,2026-09-13
+openhands-cli,OpenHands CLI (legacy),plan,UI,command paletteのPlanで計画を見る。専用`/plan`開始コマンドは一覧で未確認。,,https://docs.openhands.dev/openhands/usage/cli/command-reference,2026-09-13
+openhands-cli,OpenHands CLI (legacy),compact,SLASH,`/condense`,,https://docs.openhands.dev/openhands/usage/cli/command-reference,2026-09-13
+openhands-cli,OpenHands CLI (legacy),approval,MIXED,`--always-approve`、`--llm-approve`、`/confirm`,,https://docs.openhands.dev/openhands/usage/cli/command-reference,2026-09-13
+openhands-cli,OpenHands CLI (legacy),goal,UNVERIFIED,通常agent loop。永続GoalのCLIコマンドは今回の資料で未確認。,,https://docs.openhands.dev/openhands/usage/cli/command-reference,2026-09-13
+openhands-cli,OpenHands CLI (legacy),test,MODEL,agentにテスト実行と失敗修正を依頼,,https://docs.openhands.dev/openhands/usage/cli/command-reference,2026-09-13
+openhands-cli,OpenHands CLI (legacy),delegate,UNVERIFIED,SDKに委譲機能はあるが、このlegacy CLIの利用面で同じ操作を保証しない。,,https://docs.openhands.dev/sdk/guides/agent-file-based ; https://docs.openhands.dev/openhands/usage/cli/command-reference,2026-09-13
+openhands-cli,OpenHands CLI (legacy),schedule,EXTENSION,headlessを外部schedulerから起動。Canvasのautomation機能とは別。,,https://docs.openhands.dev/openhands/usage/cli/command-reference ; https://docs.openhands.dev/overview/introduction,2026-09-13
+openhands-cli,OpenHands CLI (legacy),limits,UNVERIFIED,このCLI表で全体のmax-turns／壁時計フラグを未確認。SDK設定とは混ぜない。,,https://docs.openhands.dev/openhands/usage/cli/command-reference,2026-09-13
+openhands-cli,OpenHands CLI (legacy),sandbox,CONFIG,workspace / runtime構成に依存。旧`serve`のDocker GUIを新規推奨とはしない。,,https://docs.openhands.dev/openhands/usage/cli/command-reference ; https://docs.openhands.dev/overview/introduction,2026-09-13
+openhands-cli,OpenHands CLI (legacy),extend,MIXED,`openhands mcp add` / `mcp list`、`/skills`,,https://docs.openhands.dev/openhands/usage/cli/command-reference,2026-09-13
+openhands-cli,OpenHands CLI (legacy),output,CLI,`--headless --json`でJSONL,,https://docs.openhands.dev/openhands/usage/cli/command-reference,2026-09-13
+openhands-sdk,OpenHands SDK / Agent Server,start,SDK,Python SDKで`Conversation(...)`を作成。CLI表の`openhands`とは別。,,https://github.com/OpenHands/software-agent-sdk/blob/76e9e25078ed0ff7970f2c75e451274d3ed32bf2/README.md,2026-09-13
+openhands-sdk,OpenHands SDK / Agent Server,model,SDK,"`LLM(model=..., base_url=...)`を設定",,https://docs.openhands.dev/sdk/api-reference/openhands.sdk.llm,2026-09-13
+openhands-sdk,OpenHands SDK / Agent Server,headless,SDK,`conversation.send_message(...)` → `conversation.run()`,,https://docs.openhands.dev/sdk/guides/convo-persistence,2026-09-13
+openhands-sdk,OpenHands SDK / Agent Server,resume,SDK,同じ`conversation_id` / `persistence_dir`で復元,,https://docs.openhands.dev/sdk/guides/convo-persistence,2026-09-13
+openhands-sdk,OpenHands SDK / Agent Server,plan,UNVERIFIED,計画ツール／agent構成による。SDK共通slash commandはない。,,https://github.com/OpenHands/software-agent-sdk/blob/76e9e25078ed0ff7970f2c75e451274d3ed32bf2/README.md,2026-09-13
+openhands-sdk,OpenHands SDK / Agent Server,compact,SDK,condenserの構成。CLIの`/condense`とは別のSDK面。,,https://docs.openhands.dev/sdk/guides/context-condenser,2026-09-13
+openhands-sdk,OpenHands SDK / Agent Server,approval,SDK,confirmation policyを設定。AlwaysConfirm等。,,https://docs.openhands.dev/sdk/guides/security,2026-09-13
+openhands-sdk,OpenHands SDK / Agent Server,goal,SDK,`FINISHED` / `STUCK` / `ERROR`等を監視し、外部controllerで完了判定と再投入を設計。,,https://docs.openhands.dev/sdk/api-reference/openhands.sdk.conversation,2026-09-13
+openhands-sdk,OpenHands SDK / Agent Server,test,SDK,外部テスト結果をcontrollerの完了条件へ組み込める。実装が必要。,,https://docs.openhands.dev/sdk/api-reference/openhands.sdk.conversation,2026-09-13
+openhands-sdk,OpenHands SDK / Agent Server,delegate,SDK,`DelegateTool` / file-based agent定義,,https://docs.openhands.dev/sdk/guides/agent-file-based,2026-09-13
+openhands-sdk,OpenHands SDK / Agent Server,schedule,MIXED,Automation Serverが定期／イベント実行を担当。SDK単体のcronコマンドではない。,,https://docs.openhands.dev/overview/introduction,2026-09-13
+openhands-sdk,OpenHands SDK / Agent Server,limits,SDK,Conversationのiteration / stuck設定等を使用。外部プロセス復旧は別途。,,https://docs.openhands.dev/sdk/api-reference/openhands.sdk.conversation,2026-09-13
+openhands-sdk,OpenHands SDK / Agent Server,sandbox,SDK,Docker等の一時workspace／Agent Serverを構成,,https://github.com/OpenHands/software-agent-sdk/blob/76e9e25078ed0ff7970f2c75e451274d3ed32bf2/README.md,2026-09-13
+openhands-sdk,OpenHands SDK / Agent Server,extend,SDK,Python tools / plugins / MCPをagentへ構成,,https://github.com/OpenHands/software-agent-sdk/blob/76e9e25078ed0ff7970f2c75e451274d3ed32bf2/README.md ; https://docs.openhands.dev/sdk/guides/convo-persistence,2026-09-13
+openhands-sdk,OpenHands SDK / Agent Server,output,SDK,Agent ServerのREST / WebSocket、SDKのevents / callbacks,,https://docs.openhands.dev/overview/introduction ; https://docs.openhands.dev/sdk/guides/convo-persistence,2026-09-13
+goose,Goose,start,CLI,`goose session`,,https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/guides/goose-cli-commands.md,2026-09-13
+goose,Goose,model,CLI,`--provider PROVIDER --model MODEL`,,https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/guides/goose-cli-commands.md,2026-09-13
+goose,Goose,headless,CLI,"`goose run --text ""PROMPT""` / `--instructions FILE`",`-t` = `--text` ; `-i` = `--instructions`,https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/guides/goose-cli-commands.md,2026-09-13
+goose,Goose,resume,CLI,`goose session --resume --session-id ID` / `goose run --resume`,`-r` = `--resume`（文脈依存）,https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/guides/goose-cli-commands.md,2026-09-13
+goose,Goose,plan,SLASH,`/plan [PROMPT]` / `/endplan`,,https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/guides/goose-cli-commands.md,2026-09-13
+goose,Goose,compact,SLASH,`/compact`,,https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/guides/goose-cli-commands.md,2026-09-13
+goose,Goose,approval,MIXED,`/mode auto` / `approve` / `smart_approve`。`GOOSE_MODE`設定。,,https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/guides/goose-cli-commands.md ; https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/guides/config-files.md,2026-09-13
+goose,Goose,goal,CLI,`goose run --recipe FILE`で定義済み作業。独立したGoal完了検証とは区別。,,https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/guides/goose-cli-commands.md,2026-09-13
+goose,Goose,test,MODEL,recipe／指示にテスト→修正を記載。テスト強制ゲートの有無は別途確認。,,https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/guides/goose-cli-commands.md,2026-09-13
+goose,Goose,delegate,MODEL,自然言語で並列subagentへ委譲を依頼。専用slash commandではない。,,https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/tutorials/subagents.md,2026-09-13
+goose,Goose,schedule,CLI,`goose schedule add` / `list` / `run-now`。schedulerの稼働設定が必要。,,https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/guides/goose-cli-commands.md,2026-09-13
+goose,Goose,limits,CLI,`goose run --max-turns N`,,https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/guides/goose-cli-commands.md,2026-09-13
+goose,Goose,sandbox,UNVERIFIED,組み込みOS隔離の統一CLIフラグは未確認。Docker Model Runnerは推論backendでありagentの隔離ではない。,,https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/getting-started/providers.md ; https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/guides/goose-cli-commands.md,2026-09-13
+goose,Goose,extend,MIXED,`goose configure`、`/extension COMMAND`、`/skills`。MCP extensions。,,https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/guides/goose-cli-commands.md ; https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/getting-started/providers.md,2026-09-13
+goose,Goose,output,CLI,"`goose run --output-format json --text ""PROMPT""` / `stream-json`",,https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/guides/goose-cli-commands.md,2026-09-13
+mistral-vibe,Mistral Vibe,start,CLI,`vibe`,,https://github.com/mistralai/mistral-vibe/blob/19b5b74faa78d0816b8d4d4c7d7543fc3520678c/README.md,2026-09-13
+mistral-vibe,Mistral Vibe,model,MIXED,`--model MODEL` / `/model`,,https://github.com/mistralai/mistral-vibe/blob/19b5b74faa78d0816b8d4d4c7d7543fc3520678c/README.md ; https://docs.mistral.ai/vibe/code/cli/commands-shortcuts,2026-09-13
+mistral-vibe,Mistral Vibe,headless,CLI,"`vibe --prompt ""PROMPT""`",`-p` = `--prompt`,https://github.com/mistralai/mistral-vibe/blob/19b5b74faa78d0816b8d4d4c7d7543fc3520678c/README.md,2026-09-13
+mistral-vibe,Mistral Vibe,resume,CLI,`vibe --continue` / `vibe --resume ID`,`-c` = `--continue`,https://github.com/mistralai/mistral-vibe/blob/19b5b74faa78d0816b8d4d4c7d7543fc3520678c/README.md,2026-09-13
+mistral-vibe,Mistral Vibe,plan,CLI,`vibe --agent plan`,,https://github.com/mistralai/mistral-vibe/blob/19b5b74faa78d0816b8d4d4c7d7543fc3520678c/README.md,2026-09-13
+mistral-vibe,Mistral Vibe,compact,SLASH,`/compact [INSTRUCTIONS]`,,https://github.com/mistralai/mistral-vibe/blob/19b5b74faa78d0816b8d4d4c7d7543fc3520678c/README.md,2026-09-13
+mistral-vibe,Mistral Vibe,approval,CLI,`--auto-approve`,`--yolo` = `--auto-approve`,https://github.com/mistralai/mistral-vibe/blob/19b5b74faa78d0816b8d4d4c7d7543fc3520678c/README.md,2026-09-13
+mistral-vibe,Mistral Vibe,goal,UNVERIFIED,通常agent loop。独立Goal検証の標準コマンドは今回の資料で未確認。,,https://github.com/mistralai/mistral-vibe/blob/19b5b74faa78d0816b8d4d4c7d7543fc3520678c/README.md,2026-09-13
+mistral-vibe,Mistral Vibe,test,MODEL,shellでテスト→修正を依頼,,https://github.com/mistralai/mistral-vibe/blob/19b5b74faa78d0816b8d4d4c7d7543fc3520678c/README.md,2026-09-13
+mistral-vibe,Mistral Vibe,delegate,CONFIG,組み込みexplore等のsubagent／カスタムagentを構成,,https://github.com/mistralai/mistral-vibe/blob/19b5b74faa78d0816b8d4d4c7d7543fc3520678c/README.md,2026-09-13
+mistral-vibe,Mistral Vibe,schedule,EXTENSION,`--prompt`で外部schedulerから起動。`/teleport`はクラウド移送でローカル定期実行ではない。,,https://github.com/mistralai/mistral-vibe/blob/19b5b74faa78d0816b8d4d4c7d7543fc3520678c/README.md ; https://docs.mistral.ai/vibe/code/cli/commands-shortcuts,2026-09-13
+mistral-vibe,Mistral Vibe,limits,CLI,`--max-turns N` / `--max-tokens N` / `--max-price N`,,https://github.com/mistralai/mistral-vibe/blob/19b5b74faa78d0816b8d4d4c7d7543fc3520678c/README.md,2026-09-13
+mistral-vibe,Mistral Vibe,sandbox,UNVERIFIED,`--worktree NAME`はGit分離。OS隔離の標準設定は今回の資料で確定しない。,,https://github.com/mistralai/mistral-vibe/blob/19b5b74faa78d0816b8d4d4c7d7543fc3520678c/README.md,2026-09-13
+mistral-vibe,Mistral Vibe,extend,MIXED,skills / MCP、`/reload`。設定は`config.toml`。,,https://github.com/mistralai/mistral-vibe/blob/19b5b74faa78d0816b8d4d4c7d7543fc3520678c/README.md ; https://docs.mistral.ai/vibe/code/cli/commands-shortcuts,2026-09-13
+mistral-vibe,Mistral Vibe,output,CLI,"`vibe -p ""PROMPT"" --output json`",,https://github.com/mistralai/mistral-vibe/blob/19b5b74faa78d0816b8d4d4c7d7543fc3520678c/README.md,2026-09-13
+kilo,Kilo Code CLI,start,CLI,`kilo`,,https://kilo.ai/docs/code-with-ai/platforms/cli-reference,2026-09-13
+kilo,Kilo Code CLI,model,MIXED,`--model provider/MODEL` / `/models`,`-m` = `--model`,https://kilo.ai/docs/code-with-ai/platforms/cli-reference ; https://kilo.ai/docs/code-with-ai/platforms/cli,2026-09-13
+kilo,Kilo Code CLI,headless,CLI,"`kilo run ""PROMPT""`",,https://kilo.ai/docs/code-with-ai/platforms/cli-reference,2026-09-13
+kilo,Kilo Code CLI,resume,MIXED,"`kilo run --continue ""PROMPT""` / `--session ID`、`/sessions`",`-c` = `--continue` ; `-s` = `--session` ; `/resume` / `/continue` = `/sessions`,https://kilo.ai/docs/code-with-ai/platforms/cli-reference ; https://kilo.ai/docs/code-with-ai/platforms/cli,2026-09-13
+kilo,Kilo Code CLI,plan,MIXED,`--agent NAME` / `/agents`で計画用agentを選択。導入済みagent名を確認。,,https://kilo.ai/docs/code-with-ai/platforms/cli-reference ; https://kilo.ai/docs/code-with-ai/platforms/cli,2026-09-13
+kilo,Kilo Code CLI,compact,SLASH,`/compact`,`/summarize` = `/compact`,https://kilo.ai/docs/code-with-ai/platforms/cli,2026-09-13
+kilo,Kilo Code CLI,approval,CLI,"`kilo run --auto ""PROMPT""`。明示denyは残る。",,https://kilo.ai/docs/code-with-ai/platforms/cli-reference,2026-09-13
+kilo,Kilo Code CLI,goal,UNVERIFIED,通常agent loop／Orchestrator。独立したGoal完了検証の標準コマンドは未確認。,,https://kilo.ai/docs/code-with-ai/platforms/cli,2026-09-13
+kilo,Kilo Code CLI,test,MODEL,テスト実行・修正をagentへ依頼,,https://kilo.ai/docs/code-with-ai/platforms/cli,2026-09-13
+kilo,Kilo Code CLI,delegate,MIXED,Orchestrator / custom agents。`kilo agent`で管理。,,https://kilo.ai/docs/code-with-ai/platforms/cli,2026-09-13
+kilo,Kilo Code CLI,schedule,CLI,`kilo serve` / `kilo daemon`。定期タスクの実行は別途構成。,,https://kilo.ai/docs/code-with-ai/platforms/cli,2026-09-13
+kilo,Kilo Code CLI,limits,UNVERIFIED,汎用の全実行時間フラグは今回のCLI表では未確定。外側で管理。,,https://kilo.ai/docs/code-with-ai/platforms/cli-reference,2026-09-13
+kilo,Kilo Code CLI,sandbox,UNVERIFIED,承認設定とOS隔離を別扱い。今回の資料で統一sandboxフラグ未確認。,,https://kilo.ai/docs/code-with-ai/platforms/cli-reference,2026-09-13
+kilo,Kilo Code CLI,extend,CLI,`kilo mcp` / `kilo plugin MODULE`、skills,,https://kilo.ai/docs/code-with-ai/platforms/cli,2026-09-13
+kilo,Kilo Code CLI,output,CLI,"`kilo run --format json ""PROMPT""`",,https://kilo.ai/docs/code-with-ai/platforms/cli-reference,2026-09-13
+cline,Cline CLI,start,CLI,`cline` / `cline --tui`,`-i` = `--tui`,https://github.com/cline/cline/blob/cfe9cadab99617d5013bf89f07b079d105057791/docs/cli/cli-reference.mdx,2026-09-13
+cline,Cline CLI,model,CLI,`--provider PROVIDER --model MODEL`,`-P` = `--provider` ; `-m` = `--model`,https://github.com/cline/cline/blob/cfe9cadab99617d5013bf89f07b079d105057791/docs/cli/cli-reference.mdx,2026-09-13
+cline,Cline CLI,headless,CLI,"`cline --json ""PROMPT""`。`--yolo`実行もターン完了で終了。",,https://github.com/cline/cline/blob/cfe9cadab99617d5013bf89f07b079d105057791/apps/cli/README.md,2026-09-13
+cline,Cline CLI,resume,CLI,`cline --id ID`。一覧は`cline history`。,`cline h` = `cline history`,https://github.com/cline/cline/blob/cfe9cadab99617d5013bf89f07b079d105057791/docs/cli/cli-reference.mdx,2026-09-13
+cline,Cline CLI,plan,CLI,"`cline --plan ""PROMPT""`",`-p` = `--plan`,https://github.com/cline/cline/blob/cfe9cadab99617d5013bf89f07b079d105057791/docs/cli/cli-reference.mdx,2026-09-13
+cline,Cline CLI,compact,CLI,`--compaction agentic` / `basic` / `off`。手動slashとは別。,,https://github.com/cline/cline/blob/cfe9cadab99617d5013bf89f07b079d105057791/apps/cli/README.md,2026-09-13
+cline,Cline CLI,approval,CLI,`--auto-approve true` / `--yolo`。yoloはspawn/teamを既定で無効化する。,`-y` = `--yolo`,https://github.com/cline/cline/blob/cfe9cadab99617d5013bf89f07b079d105057791/docs/cli/cli-reference.mdx ; https://github.com/cline/cline/blob/cfe9cadab99617d5013bf89f07b079d105057791/apps/cli/README.md,2026-09-13
+cline,Cline CLI,goal,UNVERIFIED,単発終了・background hubあり。独立Goal判定の正式コマンドは今回の資料で未確認。,,https://github.com/cline/cline/blob/cfe9cadab99617d5013bf89f07b079d105057791/apps/cli/README.md,2026-09-13
+cline,Cline CLI,test,MODEL,ツールでテスト→修正を依頼,,https://github.com/cline/cline/blob/cfe9cadab99617d5013bf89f07b079d105057791/apps/cli/README.md,2026-09-13
+cline,Cline CLI,delegate,MIXED,spawn/team機能あり。ただしyolo/zenでは既定無効。,,https://github.com/cline/cline/blob/cfe9cadab99617d5013bf89f07b079d105057791/apps/cli/README.md,2026-09-13
+cline,Cline CLI,schedule,CLI,"`cline schedule create`、`cline --zen ""PROMPT""`はhubへ背景投入。",`-z` = `--zen`,https://github.com/cline/cline/blob/cfe9cadab99617d5013bf89f07b079d105057791/apps/cli/README.md,2026-09-13
+cline,Cline CLI,limits,CLI,`--timeout SECONDS` / `--retries N`。retriesは連続mistake上限。,`-t` = `--timeout`,https://github.com/cline/cline/blob/cfe9cadab99617d5013bf89f07b079d105057791/docs/cli/cli-reference.mdx,2026-09-13
+cline,Cline CLI,sandbox,CLI,`--data-dir PATH`で状態分離／sandbox mode。ただしOSレベルの隔離保証は別途確認。,,https://github.com/cline/cline/blob/cfe9cadab99617d5013bf89f07b079d105057791/apps/cli/README.md,2026-09-13
+cline,Cline CLI,extend,CLI,`cline mcp` / `cline plugin`、hooks / skills,,https://github.com/cline/cline/blob/cfe9cadab99617d5013bf89f07b079d105057791/docs/cli/cli-reference.mdx ; https://github.com/cline/cline/blob/cfe9cadab99617d5013bf89f07b079d105057791/apps/cli/README.md,2026-09-13
+cline,Cline CLI,output,CLI,`--json`でNDJSON / `--acp`,,https://github.com/cline/cline/blob/cfe9cadab99617d5013bf89f07b079d105057791/apps/cli/README.md,2026-09-13
+gemini-cli,Gemini CLI,start,CLI,`gemini`,,https://geminicli.com/docs/cli/cli-reference/,2026-09-13
+gemini-cli,Gemini CLI,model,CLI,`--model MODEL`。モデル名指定だけで任意ローカルproviderへ変わるわけではない。,`-m` = `--model`,https://geminicli.com/docs/cli/cli-reference/ ; https://geminicli.com/docs/get-started/authentication/,2026-09-13
+gemini-cli,Gemini CLI,headless,CLI,"`gemini --prompt ""PROMPT""`",`-p` = `--prompt`,https://geminicli.com/docs/cli/cli-reference/,2026-09-13
+gemini-cli,Gemini CLI,resume,CLI,`gemini --resume latest` / `--resume ID`,`-r` = `--resume`,https://geminicli.com/docs/cli/cli-reference/ ; https://geminicli.com/docs/reference/configuration/,2026-09-13
+gemini-cli,Gemini CLI,plan,CLI,`--approval-mode plan`。headlessでは実装へ自動遷移する挙動あり。,,https://geminicli.com/docs/cli/plan-mode/,2026-09-13
+gemini-cli,Gemini CLI,compact,SLASH,`/compress`,,https://geminicli.com/docs/reference/commands/,2026-09-13
+gemini-cli,Gemini CLI,approval,CLI,`--approval-mode yolo`。古い`--yolo`はcheatsheetでdeprecated。,,https://geminicli.com/docs/cli/cli-reference/,2026-09-13
+gemini-cli,Gemini CLI,goal,UNVERIFIED,ローカルLLMでの自律Goalは未検証。通常のheadless agent loopとは区別。,,https://geminicli.com/docs/cli/cli-reference/ ; https://geminicli.com/docs/get-started/authentication/,2026-09-13
+gemini-cli,Gemini CLI,test,MODEL,シェルでテスト→修正を依頼。ローカルQwen対応を意味しない。,,https://geminicli.com/docs/reference/configuration/,2026-09-13
+gemini-cli,Gemini CLI,delegate,SLASH,`/agents list` / `/agents reload`等でsubagentを管理。ローカルQwen接続は未確認。,`/agents refresh` = `/agents reload`,https://geminicli.com/docs/reference/commands/,2026-09-13
+gemini-cli,Gemini CLI,schedule,EXTENSION,headlessを外部schedulerで起動する構成,,https://geminicli.com/docs/cli/cli-reference/,2026-09-13
+gemini-cli,Gemini CLI,limits,CONFIG,`model.maxSessionTurns`等の設定。導入版のschemaを確認。,,https://geminicli.com/docs/reference/configuration/,2026-09-13
+gemini-cli,Gemini CLI,sandbox,CLI,`--sandbox`,`-s` = `--sandbox`,https://geminicli.com/docs/cli/cli-reference/,2026-09-13
+gemini-cli,Gemini CLI,extend,CONFIG,extensions / MCP / skills / hooks,,https://geminicli.com/docs/reference/configuration/,2026-09-13
+gemini-cli,Gemini CLI,output,CLI,`--output-format json` / `stream-json`,`-o` = `--output-format`,https://geminicli.com/docs/cli/cli-reference/,2026-09-13

@@ -1,0 +1,2811 @@
+{
+  "checked_on": "2026-09-13",
+  "scope": "代表的な15製品・16実行面。全世界の網羅一覧ではない。",
+  "sources": {
+    "codex-cli": {
+      "title": "Codex CLI / slash commands",
+      "url": "https://learn.chatgpt.com/docs/developer-commands?surface=cli",
+      "checked_on": "2026-09-13"
+    },
+    "codex-config": {
+      "title": "Codex provider configuration",
+      "url": "https://learn.chatgpt.com/docs/config-file/config-reference",
+      "checked_on": "2026-09-13"
+    },
+    "claude-cli": {
+      "title": "Claude Code CLI reference",
+      "url": "https://code.claude.com/docs/en/cli-reference",
+      "checked_on": "2026-09-13"
+    },
+    "claude-interactive": {
+      "title": "Claude Code interactive commands",
+      "url": "https://code.claude.com/docs/en/interactive-mode",
+      "checked_on": "2026-09-13"
+    },
+    "claude-loop": {
+      "title": "Claude Code scheduled tasks",
+      "url": "https://code.claude.com/docs/en/scheduled-tasks",
+      "checked_on": "2026-09-13"
+    },
+    "claude-local": {
+      "title": "Ollama: Claude Code integration",
+      "url": "https://docs.ollama.com/integrations/claude-code",
+      "checked_on": "2026-09-13"
+    },
+    "grok-cli": {
+      "title": "Grok Build CLI reference",
+      "url": "https://docs.x.ai/build/cli/reference",
+      "checked_on": "2026-09-13"
+    },
+    "grok-config": {
+      "title": "Grok Build settings reference",
+      "url": "https://docs.x.ai/build/settings/reference",
+      "checked_on": "2026-09-13"
+    },
+    "grok-commands": {
+      "title": "Grok Build modes and commands",
+      "url": "https://docs.x.ai/build/modes-and-commands",
+      "checked_on": "2026-09-13"
+    },
+    "grok-headless": {
+      "title": "Grok Build headless / ACP",
+      "url": "https://docs.x.ai/build/cli/headless-scripting",
+      "checked_on": "2026-09-13"
+    },
+    "qwen-provider": {
+      "title": "Qwen Code model providers",
+      "url": "https://qwenlm.github.io/qwen-code-docs/en/users/configuration/model-providers/",
+      "checked_on": "2026-09-13"
+    },
+    "qwen-commands": {
+      "title": "Qwen Code commands",
+      "url": "https://qwenlm.github.io/qwen-code-docs/en/users/features/commands/",
+      "checked_on": "2026-09-13"
+    },
+    "qwen-goal": {
+      "title": "Qwen Code goals",
+      "url": "https://qwenlm.github.io/qwen-code-docs/en/users/features/goals/",
+      "checked_on": "2026-09-13"
+    },
+    "qwen-subagents": {
+      "title": "Qwen Code subagents",
+      "url": "https://qwenlm.github.io/qwen-code-docs/en/users/features/sub-agents/",
+      "checked_on": "2026-09-13"
+    },
+    "qwen-sandbox": {
+      "title": "Qwen Code sandbox",
+      "url": "https://qwenlm.github.io/qwen-code-docs/en/users/features/sandbox/",
+      "checked_on": "2026-09-13"
+    },
+    "qwen-headless": {
+      "title": "QwenLM/qwen-code: docs/users/features/headless.md",
+      "url": "https://github.com/QwenLM/qwen-code/blob/3ba01990e13e9e8e14e147b60add50e0f972431a/docs/users/features/headless.md",
+      "checked_on": "2026-09-13"
+    },
+    "opencode-cli": {
+      "title": "OpenCode CLI (non-v2 docs)",
+      "url": "https://opencode.ai/docs/cli/",
+      "checked_on": "2026-09-13"
+    },
+    "opencode-tui": {
+      "title": "OpenCode TUI",
+      "url": "https://opencode.ai/docs/tui/",
+      "checked_on": "2026-09-13"
+    },
+    "opencode-provider": {
+      "title": "OpenCode providers",
+      "url": "https://opencode.ai/docs/providers/",
+      "checked_on": "2026-09-13"
+    },
+    "opencode-agents": {
+      "title": "OpenCode agents",
+      "url": "https://opencode.ai/docs/agents/",
+      "checked_on": "2026-09-13"
+    },
+    "opencode-permission": {
+      "title": "OpenCode permissions",
+      "url": "https://opencode.ai/docs/permissions/",
+      "checked_on": "2026-09-13"
+    },
+    "opencode-v2": {
+      "title": "OpenCode v2 providers (separate schema)",
+      "url": "https://opencode.ai/v2/docs/providers",
+      "checked_on": "2026-09-13"
+    },
+    "hermes-cli": {
+      "title": "NousResearch/hermes-agent: website/docs/reference/cli-commands.md",
+      "url": "https://github.com/NousResearch/hermes-agent/blob/819988acb750836387fbb9d5d76203a9b3f530f4/website/docs/reference/cli-commands.md",
+      "checked_on": "2026-09-13"
+    },
+    "hermes-slash": {
+      "title": "NousResearch/hermes-agent: website/docs/reference/slash-commands.md",
+      "url": "https://github.com/NousResearch/hermes-agent/blob/819988acb750836387fbb9d5d76203a9b3f530f4/website/docs/reference/slash-commands.md",
+      "checked_on": "2026-09-13"
+    },
+    "hermes-local": {
+      "title": "Hermes local Ollama endpoint",
+      "url": "https://hermes-agent.nousresearch.com/docs/guides/local-ollama-setup",
+      "checked_on": "2026-09-13"
+    },
+    "hermes-goal": {
+      "title": "Hermes persistent goals and quality gates",
+      "url": "https://hermes-agent.nousresearch.com/docs/user-guide/features/goals",
+      "checked_on": "2026-09-13"
+    },
+    "hermes-readme": {
+      "title": "NousResearch/hermes-agent: README.md",
+      "url": "https://github.com/NousResearch/hermes-agent/blob/819988acb750836387fbb9d5d76203a9b3f530f4/README.md",
+      "checked_on": "2026-09-13"
+    },
+    "dsh-cli": {
+      "title": "deepseek-ai/deepseek-harness: apps/cli/reference/README.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/apps/cli/reference/README.md",
+      "checked_on": "2026-09-13"
+    },
+    "dsh-providers": {
+      "title": "deepseek-ai/deepseek-harness: docs/user/guide/providers.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/docs/user/guide/providers.md",
+      "checked_on": "2026-09-13"
+    },
+    "dsh-goal": {
+      "title": "deepseek-ai/deepseek-harness: packages/goal/command-goal/README.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/packages/goal/command-goal/README.md",
+      "checked_on": "2026-09-13"
+    },
+    "dsh-driver": {
+      "title": "deepseek-ai/deepseek-harness: packages/goal/goal-round-driver/README.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/packages/goal/goal-round-driver/README.md",
+      "checked_on": "2026-09-13"
+    },
+    "dsh-plan": {
+      "title": "deepseek-ai/deepseek-harness: packages/plan/plan-mode/README.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/packages/plan/plan-mode/README.md",
+      "checked_on": "2026-09-13"
+    },
+    "dsh-schedule": {
+      "title": "deepseek-ai/deepseek-harness: docs/user/guide/schedule.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/docs/user/guide/schedule.md",
+      "checked_on": "2026-09-13"
+    },
+    "dsh-python": {
+      "title": "deepseek-ai/deepseek-harness: docs/user/guide/python-sdk.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/docs/user/guide/python-sdk.md",
+      "checked_on": "2026-09-13"
+    },
+    "dsh-approval": {
+      "title": "deepseek-ai/deepseek-harness: docs/subsystems/permission-presets.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/docs/subsystems/permission-presets.md",
+      "checked_on": "2026-09-13"
+    },
+    "dsh-announcement": {
+      "title": "DeepSeek Harness developer preview",
+      "url": "https://deepseek.com/harness/en/",
+      "checked_on": "2026-09-13"
+    },
+    "pi-readme": {
+      "title": "earendil-works/pi: packages/coding-agent/README.md",
+      "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/packages/coding-agent/README.md",
+      "checked_on": "2026-09-13"
+    },
+    "pi-models": {
+      "title": "earendil-works/pi: packages/coding-agent/docs/models.md",
+      "url": "https://github.com/earendil-works/pi/blob/71dca871bc80b6bc97be37f0ca3189399d651fff/packages/coding-agent/docs/models.md",
+      "checked_on": "2026-09-13"
+    },
+    "pi-rpc": {
+      "title": "Pi RPC mode",
+      "url": "https://pi.dev/docs/latest/rpc",
+      "checked_on": "2026-09-13"
+    },
+    "aider-models": {
+      "title": "Aider supported LLMs",
+      "url": "https://aider.chat/docs/llms.html",
+      "checked_on": "2026-09-13"
+    },
+    "aider-openai": {
+      "title": "Aider OpenAI-compatible APIs",
+      "url": "https://aider.chat/docs/llms/openai-compat.html",
+      "checked_on": "2026-09-13"
+    },
+    "aider-options": {
+      "title": "Aider options",
+      "url": "https://aider.chat/docs/config/options.html",
+      "checked_on": "2026-09-13"
+    },
+    "aider-commands": {
+      "title": "Aider chat commands",
+      "url": "https://aider.chat/docs/usage/commands.html",
+      "checked_on": "2026-09-13"
+    },
+    "aider-test": {
+      "title": "Aider lint / test",
+      "url": "https://aider.chat/docs/usage/lint-test.html",
+      "checked_on": "2026-09-13"
+    },
+    "aider-modes": {
+      "title": "Aider architect / editor",
+      "url": "https://aider.chat/docs/usage/modes.html",
+      "checked_on": "2026-09-13"
+    },
+    "oh-overview": {
+      "title": "OpenHands components and legacy status",
+      "url": "https://docs.openhands.dev/overview/introduction",
+      "checked_on": "2026-09-13"
+    },
+    "oh-cli": {
+      "title": "OpenHands legacy CLI reference",
+      "url": "https://docs.openhands.dev/openhands/usage/cli/command-reference",
+      "checked_on": "2026-09-13"
+    },
+    "oh-persist": {
+      "title": "OpenHands SDK persistence",
+      "url": "https://docs.openhands.dev/sdk/guides/convo-persistence",
+      "checked_on": "2026-09-13"
+    },
+    "oh-api": {
+      "title": "OpenHands SDK Conversation API",
+      "url": "https://docs.openhands.dev/sdk/api-reference/openhands.sdk.conversation",
+      "checked_on": "2026-09-13"
+    },
+    "oh-security": {
+      "title": "OpenHands SDK confirmation policy",
+      "url": "https://docs.openhands.dev/sdk/guides/security",
+      "checked_on": "2026-09-13"
+    },
+    "oh-delegate": {
+      "title": "OpenHands file-based agents / delegation",
+      "url": "https://docs.openhands.dev/sdk/guides/agent-file-based",
+      "checked_on": "2026-09-13"
+    },
+    "oh-sdk": {
+      "title": "OpenHands/software-agent-sdk: README.md",
+      "url": "https://github.com/OpenHands/software-agent-sdk/blob/76e9e25078ed0ff7970f2c75e451274d3ed32bf2/README.md",
+      "checked_on": "2026-09-13"
+    },
+    "goose-cli": {
+      "title": "aaif-goose/goose: documentation/docs/guides/goose-cli-commands.md",
+      "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/guides/goose-cli-commands.md",
+      "checked_on": "2026-09-13"
+    },
+    "goose-provider": {
+      "title": "aaif-goose/goose: documentation/docs/getting-started/providers.md",
+      "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/getting-started/providers.md",
+      "checked_on": "2026-09-13"
+    },
+    "goose-config": {
+      "title": "aaif-goose/goose: documentation/docs/guides/config-files.md",
+      "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/guides/config-files.md",
+      "checked_on": "2026-09-13"
+    },
+    "vibe-readme": {
+      "title": "mistralai/mistral-vibe: README.md",
+      "url": "https://github.com/mistralai/mistral-vibe/blob/19b5b74faa78d0816b8d4d4c7d7543fc3520678c/README.md",
+      "checked_on": "2026-09-13"
+    },
+    "vibe-local": {
+      "title": "Vibe offline models",
+      "url": "https://docs.mistral.ai/vibe/code/cli/offline-models",
+      "checked_on": "2026-09-13"
+    },
+    "vibe-commands": {
+      "title": "Vibe commands / shortcuts",
+      "url": "https://docs.mistral.ai/vibe/code/cli/commands-shortcuts",
+      "checked_on": "2026-09-13"
+    },
+    "kilo-cli": {
+      "title": "Kilo CLI reference",
+      "url": "https://kilo.ai/docs/code-with-ai/platforms/cli-reference",
+      "checked_on": "2026-09-13"
+    },
+    "kilo-commands": {
+      "title": "Kilo CLI slash commands",
+      "url": "https://kilo.ai/docs/code-with-ai/platforms/cli",
+      "checked_on": "2026-09-13"
+    },
+    "kilo-local": {
+      "title": "Kilo local providers",
+      "url": "https://kilo.ai/docs/automate/extending/local-models",
+      "checked_on": "2026-09-13"
+    },
+    "kilo-models": {
+      "title": "Kilo custom models",
+      "url": "https://kilo.ai/docs/code-with-ai/agents/custom-models",
+      "checked_on": "2026-09-13"
+    },
+    "cline-cli": {
+      "title": "cline/cline: docs/cli/cli-reference.mdx",
+      "url": "https://github.com/cline/cline/blob/cfe9cadab99617d5013bf89f07b079d105057791/docs/cli/cli-reference.mdx",
+      "checked_on": "2026-09-13"
+    },
+    "cline-readme": {
+      "title": "cline/cline: apps/cli/README.md",
+      "url": "https://github.com/cline/cline/blob/cfe9cadab99617d5013bf89f07b079d105057791/apps/cli/README.md",
+      "checked_on": "2026-09-13"
+    },
+    "cline-local": {
+      "title": "cline/cline: docs/running-models-locally/overview.mdx",
+      "url": "https://github.com/cline/cline/blob/cfe9cadab99617d5013bf89f07b079d105057791/docs/running-models-locally/overview.mdx",
+      "checked_on": "2026-09-13"
+    },
+    "gemini-cli": {
+      "title": "Gemini CLI cheatsheet",
+      "url": "https://geminicli.com/docs/cli/cli-reference/",
+      "checked_on": "2026-09-13"
+    },
+    "gemini-auth": {
+      "title": "Gemini CLI authentication",
+      "url": "https://geminicli.com/docs/get-started/authentication/",
+      "checked_on": "2026-09-13"
+    },
+    "gemini-plan": {
+      "title": "Gemini CLI plan mode",
+      "url": "https://geminicli.com/docs/cli/plan-mode/",
+      "checked_on": "2026-09-13"
+    },
+    "gemini-config": {
+      "title": "Gemini CLI configuration",
+      "url": "https://geminicli.com/docs/reference/configuration/",
+      "checked_on": "2026-09-13"
+    },
+    "claude-commands": {
+      "title": "Claude Code current command catalog",
+      "url": "https://code.claude.com/docs/en/commands",
+      "checked_on": "2026-09-13"
+    },
+    "gemini-commands": {
+      "title": "Gemini CLI command catalog",
+      "url": "https://geminicli.com/docs/reference/commands/",
+      "checked_on": "2026-09-13"
+    },
+    "oh-llm": {
+      "title": "OpenHands SDK LLM API",
+      "url": "https://docs.openhands.dev/sdk/api-reference/openhands.sdk.llm",
+      "checked_on": "2026-09-13"
+    },
+    "oh-condenser": {
+      "title": "OpenHands Context Condenser",
+      "url": "https://docs.openhands.dev/sdk/guides/context-condenser",
+      "checked_on": "2026-09-13"
+    },
+    "oh-workspace": {
+      "title": "OpenHands workspace API",
+      "url": "https://docs.openhands.dev/sdk/api-reference/openhands.sdk.workspace",
+      "checked_on": "2026-09-13"
+    },
+    "goose-subagents": {
+      "title": "Goose subagent tutorial",
+      "url": "https://github.com/aaif-goose/goose/blob/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/tutorials/subagents.md",
+      "checked_on": "2026-09-13"
+    }
+  },
+  "harnesses": [
+    {
+      "id": "codex",
+      "name": "Codex CLI",
+      "upstream": "https://developers.openai.com/codex/",
+      "scope": "CLI。手元の help は 0.154.0。クラウド／Desktop機能は別",
+      "local": {
+        "status": "supported",
+        "protocol": "Responses",
+        "text": "`codex --oss --local-provider ollama -m MODEL`。LM Studioも選択可。独自providerは`base_url`＋`wire_api = \"responses\"`。Chat Completionsだけのサーバーとは直接同一視しない。",
+        "sources": [
+          "codex-cli",
+          "codex-config"
+        ]
+      },
+      "commands": {
+        "start": {
+          "text": "`codex`",
+          "sources": [
+            "codex-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "model": {
+          "text": "`--model MODEL` / `/model`",
+          "sources": [
+            "codex-cli"
+          ],
+          "kind": "MIXED",
+          "aliases": [
+            "`-m` = `--model`"
+          ]
+        },
+        "headless": {
+          "text": "`codex exec \"PROMPT\"`",
+          "sources": [
+            "codex-cli"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`codex e` = `codex exec`"
+          ]
+        },
+        "resume": {
+          "text": "`codex resume --last` / `codex resume ID`",
+          "sources": [
+            "codex-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "plan": {
+          "text": "`/plan [PROMPT]`",
+          "sources": [
+            "codex-cli"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "compact": {
+          "text": "`/compact`",
+          "sources": [
+            "codex-cli"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "approval": {
+          "text": "`--ask-for-approval never --sandbox workspace-write`。承認しない設定と隔離は別。",
+          "sources": [
+            "codex-cli"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-a` = `--ask-for-approval`",
+            "`-s` = `--sandbox`"
+          ]
+        },
+        "goal": {
+          "text": "`/goal OBJECTIVE`、`/goal pause`、`/goal resume`。ローカルモデルでの継続品質は未実測。",
+          "sources": [
+            "codex-cli"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "test": {
+          "text": "テストを実行して失敗を修正するよう依頼。`codex review`はレビュー用でテスト合格ゲートではない。",
+          "sources": [
+            "codex-cli"
+          ],
+          "kind": "MODEL",
+          "aliases": []
+        },
+        "delegate": {
+          "text": "エージェント機能・設定で委譲。`codex agents`はセッション閲覧で、spawnコマンドではない。",
+          "sources": [
+            "codex-cli",
+            "codex-config"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "schedule": {
+          "text": "この比較ではローカルCLIの定期実行コマンド未確定。外部schedulerで`codex exec`を起動可能。",
+          "sources": [
+            "codex-cli"
+          ],
+          "kind": "UNVERIFIED",
+          "aliases": []
+        },
+        "limits": {
+          "text": "providerの`request_max_retries` / `stream_max_retries`。壁時計制限は外部プロセス管理で補う。",
+          "sources": [
+            "codex-config"
+          ],
+          "kind": "CONFIG",
+          "aliases": []
+        },
+        "sandbox": {
+          "text": "`--sandbox workspace-write` / `read-only`。`--worktree`はGit分離でOS隔離ではない。",
+          "sources": [
+            "codex-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "extend": {
+          "text": "`codex mcp`、`codex plugin`、`/skills`",
+          "sources": [
+            "codex-cli"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "output": {
+          "text": "`codex exec --json \"PROMPT\"`",
+          "sources": [
+            "codex-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        }
+      },
+      "notes": [
+        "比較対象として掲載。ユーザーのローカル用候補からは希望どおり優先除外。",
+        "`codex -p`はプロファイル指定。非対話プロンプト指定は`exec`。",
+        "全CLIフラグがすべてのサブコマンドへ伝播するとは限らない。"
+      ]
+    },
+    {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "upstream": "https://code.claude.com/",
+      "scope": "CLI。非Claudeモデル経路はOllama側の公式案内",
+      "local": {
+        "status": "conditional",
+        "protocol": "Anthropic Messages",
+        "text": "OllamaのAnthropic互換APIで接続。`ANTHROPIC_BASE_URL=http://localhost:11434`、`ANTHROPIC_AUTH_TOKEN=ollama`、`ANTHROPIC_API_KEY=\"\"`を設定し`claude --model MODEL`。Chat Completionsのみなら変換層が必要。",
+        "sources": [
+          "claude-local"
+        ]
+      },
+      "commands": {
+        "start": {
+          "text": "`claude`",
+          "sources": [
+            "claude-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "model": {
+          "text": "`--model MODEL` / `/model`",
+          "sources": [
+            "claude-cli",
+            "claude-commands"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "headless": {
+          "text": "`claude --print \"PROMPT\"`",
+          "sources": [
+            "claude-cli"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-p` = `--print`"
+          ]
+        },
+        "resume": {
+          "text": "`claude --continue` / `claude --resume ID`",
+          "sources": [
+            "claude-cli"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-c` = `--continue`",
+            "`-r` = `--resume`"
+          ]
+        },
+        "plan": {
+          "text": "`--permission-mode plan` / `/plan`",
+          "sources": [
+            "claude-cli",
+            "claude-commands"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "compact": {
+          "text": "`/compact [INSTRUCTIONS]`",
+          "sources": [
+            "claude-commands"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "approval": {
+          "text": "`--allowedTools`等で許可範囲を指定。全スキップは`--dangerously-skip-permissions`。",
+          "sources": [
+            "claude-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "goal": {
+          "text": "通常のagent loop。`/loop`は反復／定期実行で、独立した成果検証の保証ではない。",
+          "sources": [
+            "claude-loop"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "test": {
+          "text": "シェルでテスト→修正を依頼。`/verify`は明示起動の検証skillで、決定的な必須ゲートとは別。",
+          "sources": [
+            "claude-cli",
+            "claude-commands"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "delegate": {
+          "text": "`--agents JSON` / agent定義ファイル、`/subtask TASK`でforked subagent。現行`/agents`は管理方法の案内。",
+          "sources": [
+            "claude-cli",
+            "claude-commands"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "schedule": {
+          "text": "`/loop INTERVAL PROMPT`。セッション稼働中に発火。終了中は動かず、再開時の復元に例外あり。",
+          "sources": [
+            "claude-loop"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "limits": {
+          "text": "printモードの`--max-turns N` / `--max-budget-usd N`。ローカルモデルの価格上限は時間制限の代用にしない。",
+          "sources": [
+            "claude-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "sandbox": {
+          "text": "`/sandbox`。権限スキップとsandboxを混同しない。",
+          "sources": [
+            "claude-commands"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "extend": {
+          "text": "`claude mcp`、`/mcp`、`/skills`、hooks / plugins",
+          "sources": [
+            "claude-cli",
+            "claude-commands"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "output": {
+          "text": "`claude -p \"PROMPT\" --output-format json` / `stream-json`",
+          "sources": [
+            "claude-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        }
+      },
+      "notes": [
+        "非Claudeモデルで全機能が同等に動くというAnthropicの保証は確認していない。",
+        "Ollama Cloudモデルを選ぶとローカル推論にはならない。",
+        "ユーザーの希望により推奨候補とは別枠。"
+      ]
+    },
+    {
+      "id": "grok-build",
+      "name": "Grok Build",
+      "upstream": "https://docs.x.ai/build/overview",
+      "scope": "公式`grok` CLI。非公式grok-code / grok-cliやGrok Code Fastモデルとは別",
+      "local": {
+        "status": "supported",
+        "protocol": "Chat Completions / Responses / Anthropic Messages",
+        "text": "`~/.grok/config.toml`の`[model.<id>]`に`base_url`、`model`、`api_backend`を設定。独自モデル経路あり。ローカルQwen実測は未実施。",
+        "sources": [
+          "grok-config"
+        ]
+      },
+      "commands": {
+        "start": {
+          "text": "`grok`",
+          "sources": [
+            "grok-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "model": {
+          "text": "`--model MODEL` / `/model MODEL`",
+          "sources": [
+            "grok-cli",
+            "grok-commands"
+          ],
+          "kind": "MIXED",
+          "aliases": [
+            "`-m` = `--model`",
+            "`/m` = `/model`"
+          ]
+        },
+        "headless": {
+          "text": "`grok --single \"PROMPT\"`",
+          "sources": [
+            "grok-headless"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-p` = `--single`"
+          ]
+        },
+        "resume": {
+          "text": "`grok --continue` / `grok --resume ID`",
+          "sources": [
+            "grok-cli"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-c` = `--continue`",
+            "`-r` = `--resume`"
+          ]
+        },
+        "plan": {
+          "text": "`/plan [DESCRIPTION]` / `/view-plan`",
+          "sources": [
+            "grok-commands"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "compact": {
+          "text": "`/compact [CONTEXT]`",
+          "sources": [
+            "grok-commands"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "approval": {
+          "text": "`--always-approve`。denyルールやhooksは別に適用。",
+          "sources": [
+            "grok-cli",
+            "grok-commands"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`--yolo` = `--always-approve`",
+            "`--dangerously-skip-permissions` は互換別名"
+          ]
+        },
+        "goal": {
+          "text": "`/workflow NAME`で保存workflowを実行・pause/resume。独立した完了検証の有無は未確認。",
+          "sources": [
+            "grok-commands"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "test": {
+          "text": "シェルでテスト→修正を依頼。workflowに手順を記述可能。",
+          "sources": [
+            "grok-commands"
+          ],
+          "kind": "MODEL",
+          "aliases": []
+        },
+        "delegate": {
+          "text": "`GROK_SUBAGENTS=1`、taskツール。`/tasks`で確認。",
+          "sources": [
+            "grok-config",
+            "grok-commands"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "schedule": {
+          "text": "`/loop [INTERVAL] PROMPT`、`/tasks`",
+          "sources": [
+            "grok-commands"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "limits": {
+          "text": "`--max-turns N`、modelごとの`max_retries`",
+          "sources": [
+            "grok-cli",
+            "grok-config"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "sandbox": {
+          "text": "`--sandbox workspace` / `read-only` / `strict`。`--worktree`は別のGit分離。",
+          "sources": [
+            "grok-cli",
+            "grok-config"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "extend": {
+          "text": "`grok mcp`、`grok plugin`、`/skills`、hooks",
+          "sources": [
+            "grok-cli",
+            "grok-commands"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "output": {
+          "text": "`--output-format json` / `streaming-json`、`grok agent stdio`はACP",
+          "sources": [
+            "grok-headless"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        }
+      },
+      "notes": [
+        "「grokcode」は本比較では公式Grok Buildと解釈。",
+        "`streaming-json`という綴り。他CLIの`stream-json`をそのまま使わない。",
+        "補助モデルやホスト側検索の設定もローカル化対象。カスタム推論先の指定だけで完全オフラインとは断定しない。"
+      ]
+    },
+    {
+      "id": "qwen-code",
+      "name": "Qwen Code",
+      "upstream": "https://github.com/QwenLM/qwen-code",
+      "scope": "公式CLI。更新の速い現行docs / mainを参照",
+      "local": {
+        "status": "supported",
+        "protocol": "Chat Completionsほかprovider別プロトコル",
+        "text": "`qwen --auth-type openai --openai-base-url URL --openai-api-key KEY --model MODEL`。URLは通常`http://127.0.0.1:PORT/v1`。",
+        "sources": [
+          "qwen-provider"
+        ]
+      },
+      "commands": {
+        "start": {
+          "text": "`qwen`",
+          "sources": [
+            "qwen-headless"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "model": {
+          "text": "`--model MODEL` / `/model`",
+          "sources": [
+            "qwen-headless",
+            "qwen-commands"
+          ],
+          "kind": "MIXED",
+          "aliases": [
+            "`-m` = `--model`"
+          ]
+        },
+        "headless": {
+          "text": "`qwen --prompt \"PROMPT\"`",
+          "sources": [
+            "qwen-headless"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-p` = `--prompt`"
+          ]
+        },
+        "resume": {
+          "text": "`qwen --continue` / `qwen --resume ID`。headlessにも対応。",
+          "sources": [
+            "qwen-headless"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "plan": {
+          "text": "`--approval-mode plan`",
+          "sources": [
+            "qwen-headless"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "compact": {
+          "text": "`/compress`",
+          "sources": [
+            "qwen-commands"
+          ],
+          "kind": "SLASH",
+          "aliases": [
+            "`/summarize` = `/compress`"
+          ]
+        },
+        "approval": {
+          "text": "`--approval-mode yolo` / `--yolo`。`auto`は判定による承認で全許可とは異なる。",
+          "sources": [
+            "qwen-headless"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-y` = `--yolo`"
+          ]
+        },
+        "goal": {
+          "text": "`/goal OBJECTIVE`。headlessは`qwen -p \"/goal OBJECTIVE\"`。完了・blocked申告を検証役が判定。",
+          "sources": [
+            "qwen-headless",
+            "qwen-goal"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "test": {
+          "text": "テスト合格をGoalの検証条件に記載。テスト実行・修正はモデルのツール操作。",
+          "sources": [
+            "qwen-goal"
+          ],
+          "kind": "MODEL",
+          "aliases": []
+        },
+        "delegate": {
+          "text": "`/agents create` / `manage`、`/fork DIRECTIVE`、`/coordinate TASK`。subagentのモデル・権限設定に依存。",
+          "sources": [
+            "qwen-commands",
+            "qwen-subagents"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "schedule": {
+          "text": "`/loop INTERVAL PROMPT`は同梱skill。`/tasks` / `/workflows`で背景作業を確認。",
+          "sources": [
+            "qwen-commands"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "limits": {
+          "text": "`--max-session-turns N` / `--max-wall-time 1h` / `--max-tool-calls N`。serve/ACPへ同じ上限が適用されると仮定しない。",
+          "sources": [
+            "qwen-headless"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "sandbox": {
+          "text": "`--sandbox`。`--yolo`だけでは隔離されない。",
+          "sources": [
+            "qwen-sandbox",
+            "qwen-headless"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "extend": {
+          "text": "`/mcp`、`/skills`。拡張の有効化状態に依存。",
+          "sources": [
+            "qwen-commands"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "output": {
+          "text": "`--output-format json` / `stream-json`",
+          "sources": [
+            "qwen-headless"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-o` = `--output-format`"
+          ]
+        }
+      },
+      "notes": [
+        "一つのGoalの継続と、複数タスクのキュー処理を区別する。",
+        "公式資料の対応であり、現在のユーザーのQwenサーバーでの実行検証はしていない。"
+      ]
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "upstream": "https://github.com/anomalyco/opencode",
+      "scope": "通常の`opencode` CLI。`opencode2` / v2設定は別扱い",
+      "local": {
+        "status": "supported",
+        "protocol": "Chat Completions / Responses（providerで選択）",
+        "text": "`opencode.json`の`provider.<id>.options.baseURL`。Chat Completionsなら`@ai-sdk/openai-compatible`。`-m provider/MODEL`で選択。",
+        "sources": [
+          "opencode-provider"
+        ]
+      },
+      "commands": {
+        "start": {
+          "text": "`opencode`",
+          "sources": [
+            "opencode-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "model": {
+          "text": "`--model provider/MODEL` / `/models`",
+          "sources": [
+            "opencode-cli",
+            "opencode-tui"
+          ],
+          "kind": "MIXED",
+          "aliases": [
+            "`-m` = `--model`"
+          ]
+        },
+        "headless": {
+          "text": "`opencode run \"PROMPT\"`",
+          "sources": [
+            "opencode-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "resume": {
+          "text": "`opencode --continue` / `opencode --session ID`。runにも指定可能。",
+          "sources": [
+            "opencode-cli"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-c` = `--continue`",
+            "`-s` = `--session`"
+          ]
+        },
+        "plan": {
+          "text": "`--agent plan` / TUIでTabによるagent切替",
+          "sources": [
+            "opencode-agents"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "compact": {
+          "text": "`/compact`",
+          "sources": [
+            "opencode-tui"
+          ],
+          "kind": "SLASH",
+          "aliases": [
+            "`/summarize` = `/compact`"
+          ]
+        },
+        "approval": {
+          "text": "`--auto`は明示deny以外を自動承認。`permission`設定で個別制御。",
+          "sources": [
+            "opencode-cli",
+            "opencode-permission"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "goal": {
+          "text": "通常のagent loop。Goalの独立検証付き継続は、本体の今回確認した資料では未確認。",
+          "sources": [
+            "opencode-agents"
+          ],
+          "kind": "UNVERIFIED",
+          "aliases": []
+        },
+        "test": {
+          "text": "bashでテスト→修正を依頼。formatterとテスト完了ゲートは別。",
+          "sources": [
+            "opencode-agents"
+          ],
+          "kind": "MODEL",
+          "aliases": []
+        },
+        "delegate": {
+          "text": "subagentを設定。`@general`等で利用。`opencode agent create`で作成。",
+          "sources": [
+            "opencode-agents",
+            "opencode-cli"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "schedule": {
+          "text": "`opencode serve`＋`opencode run --attach URL`。定期起動は外側で管理。",
+          "sources": [
+            "opencode-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "limits": {
+          "text": "agentの`steps`で推論反復を制限。プロセスの時間上限とは別。",
+          "sources": [
+            "opencode-agents"
+          ],
+          "kind": "CONFIG",
+          "aliases": []
+        },
+        "sandbox": {
+          "text": "permissionは操作許可。OS隔離の汎用フラグはこの資料群で未確認。コンテナ等を外側で用意。",
+          "sources": [
+            "opencode-permission"
+          ],
+          "kind": "UNVERIFIED",
+          "aliases": []
+        },
+        "extend": {
+          "text": "`opencode mcp add`、skills、plugins、カスタムコマンド",
+          "sources": [
+            "opencode-cli",
+            "opencode-tui"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "output": {
+          "text": "`opencode run --format json \"PROMPT\"`",
+          "sources": [
+            "opencode-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        }
+      },
+      "notes": [
+        "v2は`providers` / `package` / `settings`等の別スキーマ。通常版の`provider` / `npm` / `options`を混ぜない。",
+        "ユーザーが感じた弱さは評価の出発点であり、他ハーネスより劣るという実測結果にはしていない。"
+      ]
+    },
+    {
+      "id": "hermes",
+      "name": "Hermes Agent",
+      "upstream": "https://github.com/NousResearch/hermes-agent",
+      "scope": "Nous Researchの汎用agent。CLI / gateway / Goalは利用面で差がある",
+      "local": {
+        "status": "supported",
+        "protocol": "Chat Completions（custom endpoint）",
+        "text": "`hermes setup`でCustom Endpoint。`model.provider: custom`、`model.base_url: URL`、`model.default: MODEL`。",
+        "sources": [
+          "hermes-local"
+        ]
+      },
+      "commands": {
+        "start": {
+          "text": "`hermes` / `hermes chat`",
+          "sources": [
+            "hermes-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "model": {
+          "text": "`hermes chat --model MODEL` / `/model`",
+          "sources": [
+            "hermes-cli",
+            "hermes-slash"
+          ],
+          "kind": "MIXED",
+          "aliases": [
+            "`-m` = `--model`"
+          ]
+        },
+        "headless": {
+          "text": "`hermes chat --oneshot --query \"PROMPT\"`。現行では`-q`単独はTTYで対話を継続する。",
+          "sources": [
+            "hermes-cli"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-q` = `--query`"
+          ]
+        },
+        "resume": {
+          "text": "`hermes --continue` / `hermes --resume ID`",
+          "sources": [
+            "hermes-cli"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-c` = `--continue`",
+            "`-r` = `--resume`"
+          ]
+        },
+        "plan": {
+          "text": "`/plan [TASK]`で計画ファイルを作成",
+          "sources": [
+            "hermes-slash"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "compact": {
+          "text": "`/compress [focus TOPIC]`",
+          "sources": [
+            "hermes-slash"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "approval": {
+          "text": "`--yolo`で承認をスキップ。通常のapproval設定とは区別。",
+          "sources": [
+            "hermes-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "goal": {
+          "text": "`/goal OBJECTIVE`、`/goal pause` / `resume`。補助judgeで継続判断。ACPには未実装。",
+          "sources": [
+            "hermes-goal"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "test": {
+          "text": "`/goal gate add COMMAND`。終了コード0を完了の必要条件にできる。通常のjudge判断も続く。",
+          "sources": [
+            "hermes-goal"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "delegate": {
+          "text": "delegate機能。`/bg PROMPT`は別背景セッションで、Goalの自動タスク分割とは別。",
+          "sources": [
+            "hermes-readme",
+            "hermes-slash"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "schedule": {
+          "text": "`hermes cron create` / `list` / `tick`、`hermes gateway`。複数タスクは`hermes kanban`系。",
+          "sources": [
+            "hermes-cli",
+            "hermes-goal"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "limits": {
+          "text": "`--max-turns N`は一会話ターン内のtool反復。Goalは`goals.max_turns`、gateには別のtimeout/retry。",
+          "sources": [
+            "hermes-cli",
+            "hermes-goal"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "sandbox": {
+          "text": "terminal backendにDocker / SSH等を選択。`--worktree`は別のGit分離。",
+          "sources": [
+            "hermes-readme",
+            "hermes-cli"
+          ],
+          "kind": "CONFIG",
+          "aliases": []
+        },
+        "extend": {
+          "text": "skills / MCP / plugins。`/skills`で管理。",
+          "sources": [
+            "hermes-readme",
+            "hermes-slash"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "output": {
+          "text": "`hermes -z \"PROMPT\"`は最終テキスト出力。構造化制御はRPC/SDK面を別途使用。",
+          "sources": [
+            "hermes-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        }
+      },
+      "notes": [
+        "GoalとKanbanは別機能。`/goal`だけでボードや並列workerは作られない。",
+        "judgeのデフォルトは主モデル。補助モデル、fallback、外部ツールも確認しないと完全ローカルとは言えない。",
+        "judge単独はLLM判定。テストを必須にする場合はquality gateを併用する。"
+      ]
+    },
+    {
+      "id": "deepseek-harness",
+      "name": "DeepSeek Harness (dsh)",
+      "upstream": "https://github.com/deepseek-ai/deepseek-harness",
+      "scope": "公式developer preview。Web / headless / SDKを区別",
+      "local": {
+        "status": "supported",
+        "protocol": "Chat Completions / Responses / Anthropic Messages",
+        "text": "WebのSettings → Models → Add a custom provider。`baseURL`とAPI protocolを指定。`llm-pi-ai.providers`で設定可。",
+        "sources": [
+          "dsh-providers"
+        ]
+      },
+      "commands": {
+        "start": {
+          "text": "`dsh web`（未導入なら`npx @deepseek-ai/dsh web`）",
+          "sources": [
+            "dsh-cli"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`dsh web` = `dsh --profile web`"
+          ]
+        },
+        "model": {
+          "text": "Webのモデル選択 / `settings.yaml`。`--model`をlauncherの共通引数とは扱わない。",
+          "sources": [
+            "dsh-providers",
+            "dsh-cli"
+          ],
+          "kind": "UI",
+          "aliases": []
+        },
+        "headless": {
+          "text": "`dsh --profile headless \"PROMPT\"`。新規永続sessionを作る単発実行。",
+          "sources": [
+            "dsh-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "resume": {
+          "text": "Webの既存sessionまたはSDKで復元。共通CLIの`--resume`は資料で未確認。",
+          "sources": [
+            "dsh-python",
+            "dsh-cli"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "plan": {
+          "text": "`/plan [PROMPT]` / `/plan off`（command adapterのあるUI）",
+          "sources": [
+            "dsh-plan"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "compact": {
+          "text": "compaction subsystemあり。共通CLI／slashの正式な呼出綴りは未確定。",
+          "sources": [
+            "dsh-cli"
+          ],
+          "kind": "UNVERIFIED",
+          "aliases": []
+        },
+        "approval": {
+          "text": "permission presetで制御。base-backed新規sessionは`workspace-write`。汎用`--yolo`を想定しない。",
+          "sources": [
+            "dsh-cli",
+            "dsh-approval"
+          ],
+          "kind": "CONFIG",
+          "aliases": []
+        },
+        "goal": {
+          "text": "`/goal OBJECTIVE` / `pause` / `resume`。Goalサービス＋command＋round-driverの構成に依存。",
+          "sources": [
+            "dsh-goal",
+            "dsh-driver"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "test": {
+          "text": "シェルで検証。Goal保存自体には独立した成果検証の保証はない。",
+          "sources": [
+            "dsh-cli",
+            "dsh-driver"
+          ],
+          "kind": "MODEL",
+          "aliases": []
+        },
+        "delegate": {
+          "text": "subagentプラグイン構成。Codex / Claude委譲は別の任意bundleで、ローカルモデル利用の必須条件ではない。",
+          "sources": [
+            "dsh-cli"
+          ],
+          "kind": "EXTENSION",
+          "aliases": []
+        },
+        "schedule": {
+          "text": "Schedule UI／schedule subsystem。配置したprofileと稼働ホストに依存。",
+          "sources": [
+            "dsh-schedule"
+          ],
+          "kind": "UI",
+          "aliases": []
+        },
+        "limits": {
+          "text": "Goalの`maxGoalRounds`（既定256）。round-driverはcap到達等で停止。",
+          "sources": [
+            "dsh-driver"
+          ],
+          "kind": "CONFIG",
+          "aliases": []
+        },
+        "sandbox": {
+          "text": "sandbox / permission presetを構成。Planモードだけではツールを強制制限しない。",
+          "sources": [
+            "dsh-plan",
+            "dsh-approval"
+          ],
+          "kind": "CONFIG",
+          "aliases": []
+        },
+        "extend": {
+          "text": "`dsh plugin --profile NAME add PACKAGE`。MCP clientは同梱、serverは既定で未有効。",
+          "sources": [
+            "dsh-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "output": {
+          "text": "headlessはstdoutに最終文。`dsh --profile sdk`はJSON-RPC、`--profile acp`はACP。",
+          "sources": [
+            "dsh-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        }
+      },
+      "notes": [
+        "Goal状態の永続化と自動再始動は別。session再開／fork後は`/goal resume`等でcontinuationを再度有効にする。",
+        "CLI引数はprofileごとに異なる。`dsh -p`等の他製品由来の省略形を作らない。",
+        "developer previewとして破壊的変更を想定した参照点固定が必要。"
+      ]
+    },
+    {
+      "id": "pi",
+      "name": "Pi (TypeScript本家)",
+      "upstream": "https://github.com/earendil-works/pi",
+      "scope": "earendil-works/piのcoding-agent。本家と同名のRust/Python版を混ぜない",
+      "local": {
+        "status": "supported",
+        "protocol": "Chat Completions等（provider設定）",
+        "text": "`~/.pi/agent/models.json`に`baseUrl`、`api: openai-completions`、`apiKey`、`models`を登録。鍵不要サーバーにもダミーkey設定が必要。",
+        "sources": [
+          "pi-models"
+        ]
+      },
+      "commands": {
+        "start": {
+          "text": "`pi`",
+          "sources": [
+            "pi-readme"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "model": {
+          "text": "`--provider PROVIDER --model MODEL` / `/model`",
+          "sources": [
+            "pi-readme"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "headless": {
+          "text": "`pi --print \"PROMPT\"`",
+          "sources": [
+            "pi-readme"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-p` = `--print`"
+          ]
+        },
+        "resume": {
+          "text": "`pi --continue`、`pi --resume`でpicker、`pi --session PATH_OR_ID`で指定",
+          "sources": [
+            "pi-readme"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-c` = `--continue`",
+            "`-r` = `--resume`"
+          ]
+        },
+        "plan": {
+          "text": "標準Planモードなし。計画ファイル、extension / packageで追加。",
+          "sources": [
+            "pi-readme"
+          ],
+          "kind": "EXTENSION",
+          "aliases": []
+        },
+        "compact": {
+          "text": "`/compact [PROMPT]`、`/tree`で会話の分岐へ移動",
+          "sources": [
+            "pi-readme"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "approval": {
+          "text": "標準でツール承認popupなし。`--approve`はproject trust用でツール承認とは別。",
+          "sources": [
+            "pi-readme"
+          ],
+          "kind": "NONE",
+          "aliases": []
+        },
+        "goal": {
+          "text": "標準Goal機構としては扱わない。RPC / extensionで継続制御を実装。",
+          "sources": [
+            "pi-readme",
+            "pi-rpc"
+          ],
+          "kind": "EXTENSION",
+          "aliases": []
+        },
+        "test": {
+          "text": "bashでテスト→修正を依頼。完了ゲートはextension／外部runnerで実装。",
+          "sources": [
+            "pi-readme"
+          ],
+          "kind": "MODEL",
+          "aliases": []
+        },
+        "delegate": {
+          "text": "標準subagentなし。extension、package、複数Piプロセスで構成。",
+          "sources": [
+            "pi-readme"
+          ],
+          "kind": "EXTENSION",
+          "aliases": []
+        },
+        "schedule": {
+          "text": "標準background bashなし。tmuxや外部schedulerで構成。",
+          "sources": [
+            "pi-readme"
+          ],
+          "kind": "EXTENSION",
+          "aliases": []
+        },
+        "limits": {
+          "text": "汎用max-turnsフラグは今回のCLI一覧で未確認。RPCのabortや外部timeoutで補う。",
+          "sources": [
+            "pi-readme",
+            "pi-rpc"
+          ],
+          "kind": "UNVERIFIED",
+          "aliases": []
+        },
+        "sandbox": {
+          "text": "標準のOS隔離は外部containerまたはextensionで構成。",
+          "sources": [
+            "pi-readme"
+          ],
+          "kind": "EXTENSION",
+          "aliases": []
+        },
+        "extend": {
+          "text": "`pi install PACKAGE`。標準MCPなし、extensionで追加。skillsは`/skill:NAME`。",
+          "sources": [
+            "pi-readme"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "output": {
+          "text": "`pi --mode json -p \"PROMPT\"` / `pi --mode rpc`",
+          "sources": [
+            "pi-readme",
+            "pi-rpc"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        }
+      },
+      "notes": [
+        "軽量コアを自分で拡張する用途に向く、という評価は構成からの判断。",
+        "`--yolo`を本家Piの正式フラグとして掲載しない。同名別実装の資料との混同を避ける。",
+        "会話の`/tree`・forkは、ファイルシステムのGit worktreeを作る操作ではない。"
+      ]
+    },
+    {
+      "id": "aider",
+      "name": "Aider",
+      "upstream": "https://github.com/Aider-AI/aider",
+      "scope": "CLI。編集・検証中心",
+      "local": {
+        "status": "supported",
+        "protocol": "Chat Completions / Ollama",
+        "text": "OpenAI互換は`OPENAI_API_BASE=URL`＋`OPENAI_API_KEY=KEY`、`aider --model openai/MODEL`。Ollamaは`ollama_chat/MODEL`。",
+        "sources": [
+          "aider-models",
+          "aider-openai"
+        ]
+      },
+      "commands": {
+        "start": {
+          "text": "`aider`",
+          "sources": [
+            "aider-options"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "model": {
+          "text": "`--model MODEL` / `/model MODEL`",
+          "sources": [
+            "aider-options",
+            "aider-commands"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "headless": {
+          "text": "`aider --message \"PROMPT\"` / `--message-file FILE`",
+          "sources": [
+            "aider-options"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-m` / `--msg` = `--message`",
+            "`-f` = `--message-file`"
+          ]
+        },
+        "resume": {
+          "text": "`--restore-chat-history`。履歴復元であり、停止した任意プロセスを復旧するものではない。",
+          "sources": [
+            "aider-options"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "plan": {
+          "text": "`/ask`で相談、`/architect`で設計→editorへ。専用のOS読み取り制限とは別。",
+          "sources": [
+            "aider-modes"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "compact": {
+          "text": "自動履歴要約あり。共通`/compact`の存在は今回のcommand一覧で確認できない。",
+          "sources": [
+            "aider-options",
+            "aider-commands"
+          ],
+          "kind": "UNVERIFIED",
+          "aliases": []
+        },
+        "approval": {
+          "text": "`--yes-always`で確認へ自動Yes",
+          "sources": [
+            "aider-options"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "goal": {
+          "text": "一依頼の編集と修正。大きい目標のキュー／継続／完了判定は外部runnerで補う。",
+          "sources": [
+            "aider-options",
+            "aider-modes"
+          ],
+          "kind": "EXTENSION",
+          "aliases": []
+        },
+        "test": {
+          "text": "`--auto-test --test-cmd COMMAND`、`/test COMMAND`。編集後lintと失敗修正あり。",
+          "sources": [
+            "aider-test"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "delegate": {
+          "text": "Architect / Editorのモデル分離。独立workerへのsubagent委譲とは別。",
+          "sources": [
+            "aider-modes"
+          ],
+          "kind": "NONE",
+          "aliases": []
+        },
+        "schedule": {
+          "text": "`--message-file FILE`を外部schedulerから実行",
+          "sources": [
+            "aider-options"
+          ],
+          "kind": "EXTENSION",
+          "aliases": []
+        },
+        "limits": {
+          "text": "`--max-chat-history-tokens N`は履歴量。壁時計・全作業の反復上限とは別。",
+          "sources": [
+            "aider-options"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "sandbox": {
+          "text": "組み込みOS隔離は今回のoption一覧で未確認。外部container等で構成。",
+          "sources": [
+            "aider-options"
+          ],
+          "kind": "UNVERIFIED",
+          "aliases": []
+        },
+        "extend": {
+          "text": "`--load FILE`でchat command読込。MCPは今回の標準一覧で未確認。",
+          "sources": [
+            "aider-options"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "output": {
+          "text": "`--chat-history-file FILE` / `--llm-history-file FILE`。汎用JSON event streamとは別。",
+          "sources": [
+            "aider-options"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        }
+      },
+      "notes": [
+        "`aider -m`はモデル指定ではなくメッセージ。モデルは`--model`を使う。",
+        "自動テストは合格まで無限に粘る保証ではない。終了後にも外部で成果確認を行える設計にする。"
+      ]
+    },
+    {
+      "id": "openhands-cli",
+      "name": "OpenHands CLI (legacy)",
+      "upstream": "https://docs.openhands.dev/openhands/usage/cli/command-reference",
+      "scope": "CLIは公式でfeature-complete・安定性維持中心。新しいCanvas/SDKと分離",
+      "local": {
+        "status": "supported",
+        "protocol": "provider / SDKが扱うローカルAPI",
+        "text": "`LLM_MODEL`、`LLM_BASE_URL`、`LLM_API_KEY`＋`--override-with-envs`で既存設定を上書き。",
+        "sources": [
+          "oh-cli",
+          "oh-llm"
+        ]
+      },
+      "commands": {
+        "start": {
+          "text": "`openhands`",
+          "sources": [
+            "oh-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "model": {
+          "text": "Settings、または`LLM_MODEL`＋`--override-with-envs`",
+          "sources": [
+            "oh-cli"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "headless": {
+          "text": "`openhands --headless --task \"PROMPT\"`",
+          "sources": [
+            "oh-cli"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-t` = `--task`",
+            "`-f` = `--file`"
+          ]
+        },
+        "resume": {
+          "text": "`openhands --resume --last` / `openhands --resume ID`",
+          "sources": [
+            "oh-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "plan": {
+          "text": "command paletteのPlanで計画を見る。専用`/plan`開始コマンドは一覧で未確認。",
+          "sources": [
+            "oh-cli"
+          ],
+          "kind": "UI",
+          "aliases": []
+        },
+        "compact": {
+          "text": "`/condense`",
+          "sources": [
+            "oh-cli"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "approval": {
+          "text": "`--always-approve`、`--llm-approve`、`/confirm`",
+          "sources": [
+            "oh-cli"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "goal": {
+          "text": "通常agent loop。永続GoalのCLIコマンドは今回の資料で未確認。",
+          "sources": [
+            "oh-cli"
+          ],
+          "kind": "UNVERIFIED",
+          "aliases": []
+        },
+        "test": {
+          "text": "agentにテスト実行と失敗修正を依頼",
+          "sources": [
+            "oh-cli"
+          ],
+          "kind": "MODEL",
+          "aliases": []
+        },
+        "delegate": {
+          "text": "SDKに委譲機能はあるが、このlegacy CLIの利用面で同じ操作を保証しない。",
+          "sources": [
+            "oh-delegate",
+            "oh-cli"
+          ],
+          "kind": "UNVERIFIED",
+          "aliases": []
+        },
+        "schedule": {
+          "text": "headlessを外部schedulerから起動。Canvasのautomation機能とは別。",
+          "sources": [
+            "oh-cli",
+            "oh-overview"
+          ],
+          "kind": "EXTENSION",
+          "aliases": []
+        },
+        "limits": {
+          "text": "このCLI表で全体のmax-turns／壁時計フラグを未確認。SDK設定とは混ぜない。",
+          "sources": [
+            "oh-cli"
+          ],
+          "kind": "UNVERIFIED",
+          "aliases": []
+        },
+        "sandbox": {
+          "text": "workspace / runtime構成に依存。旧`serve`のDocker GUIを新規推奨とはしない。",
+          "sources": [
+            "oh-cli",
+            "oh-overview"
+          ],
+          "kind": "CONFIG",
+          "aliases": []
+        },
+        "extend": {
+          "text": "`openhands mcp add` / `mcp list`、`/skills`",
+          "sources": [
+            "oh-cli"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "output": {
+          "text": "`--headless --json`でJSONL",
+          "sources": [
+            "oh-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        }
+      },
+      "notes": [
+        "以前の比較から修正: 新規のブラウザ運用はAgent Canvasを確認する。旧Local GUIはdeprecated。",
+        "SDKの機能をそのままCLIの標準コマンド欄へ転記しない。"
+      ]
+    },
+    {
+      "id": "openhands-sdk",
+      "name": "OpenHands SDK / Agent Server",
+      "upstream": "https://github.com/OpenHands/software-agent-sdk",
+      "scope": "現在のSDK / Agent Server。ブラウザ操作はAgent Canvas",
+      "local": {
+        "status": "supported",
+        "protocol": "LLMのprovider / base_url設定",
+        "text": "SDKのLLMをローカルproviderへ構成。Canvasはクライアント、推論設定と実行環境は接続先backend側。",
+        "sources": [
+          "oh-llm",
+          "oh-overview"
+        ]
+      },
+      "commands": {
+        "start": {
+          "text": "Python SDKで`Conversation(...)`を作成。CLI表の`openhands`とは別。",
+          "sources": [
+            "oh-sdk"
+          ],
+          "kind": "SDK",
+          "aliases": []
+        },
+        "model": {
+          "text": "`LLM(model=..., base_url=...)`を設定",
+          "sources": [
+            "oh-llm"
+          ],
+          "kind": "SDK",
+          "aliases": []
+        },
+        "headless": {
+          "text": "`conversation.send_message(...)` → `conversation.run()`",
+          "sources": [
+            "oh-persist"
+          ],
+          "kind": "SDK",
+          "aliases": []
+        },
+        "resume": {
+          "text": "同じ`conversation_id` / `persistence_dir`で復元",
+          "sources": [
+            "oh-persist"
+          ],
+          "kind": "SDK",
+          "aliases": []
+        },
+        "plan": {
+          "text": "計画ツール／agent構成による。SDK共通slash commandはない。",
+          "sources": [
+            "oh-sdk"
+          ],
+          "kind": "UNVERIFIED",
+          "aliases": []
+        },
+        "compact": {
+          "text": "condenserの構成。CLIの`/condense`とは別のSDK面。",
+          "sources": [
+            "oh-condenser"
+          ],
+          "kind": "SDK",
+          "aliases": []
+        },
+        "approval": {
+          "text": "confirmation policyを設定。AlwaysConfirm等。",
+          "sources": [
+            "oh-security"
+          ],
+          "kind": "SDK",
+          "aliases": []
+        },
+        "goal": {
+          "text": "`FINISHED` / `STUCK` / `ERROR`等を監視し、外部controllerで完了判定と再投入を設計。",
+          "sources": [
+            "oh-api"
+          ],
+          "kind": "SDK",
+          "aliases": []
+        },
+        "test": {
+          "text": "外部テスト結果をcontrollerの完了条件へ組み込める。実装が必要。",
+          "sources": [
+            "oh-api"
+          ],
+          "kind": "SDK",
+          "aliases": []
+        },
+        "delegate": {
+          "text": "`DelegateTool` / file-based agent定義",
+          "sources": [
+            "oh-delegate"
+          ],
+          "kind": "SDK",
+          "aliases": []
+        },
+        "schedule": {
+          "text": "Automation Serverが定期／イベント実行を担当。SDK単体のcronコマンドではない。",
+          "sources": [
+            "oh-overview"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "limits": {
+          "text": "Conversationのiteration / stuck設定等を使用。外部プロセス復旧は別途。",
+          "sources": [
+            "oh-api"
+          ],
+          "kind": "SDK",
+          "aliases": []
+        },
+        "sandbox": {
+          "text": "Docker等の一時workspace／Agent Serverを構成",
+          "sources": [
+            "oh-sdk"
+          ],
+          "kind": "SDK",
+          "aliases": []
+        },
+        "extend": {
+          "text": "Python tools / plugins / MCPをagentへ構成",
+          "sources": [
+            "oh-sdk",
+            "oh-persist"
+          ],
+          "kind": "SDK",
+          "aliases": []
+        },
+        "output": {
+          "text": "Agent ServerのREST / WebSocket、SDKのevents / callbacks",
+          "sources": [
+            "oh-overview",
+            "oh-persist"
+          ],
+          "kind": "SDK",
+          "aliases": []
+        }
+      },
+      "notes": [
+        "タスクキュー、外部評価、再試行を自分で設計する候補。",
+        "state復元があるだけで、OS再起動後のプロセス自動起動や成功までの無制限再試行が実装済みとは言えない。"
+      ]
+    },
+    {
+      "id": "goose",
+      "name": "Goose",
+      "upstream": "https://github.com/aaif-goose/goose",
+      "scope": "旧block/gooseはaaif-goose/gooseへ移転。CLIを対象",
+      "local": {
+        "status": "supported",
+        "protocol": "Ollama / OpenAI-compatible",
+        "text": "`goose configure`でprovider設定。Ollamaは`OLLAMA_HOST`、OpenAI互換は`OPENAI_HOST`。`--provider` / `--model`で選択。",
+        "sources": [
+          "goose-provider",
+          "goose-cli"
+        ]
+      },
+      "commands": {
+        "start": {
+          "text": "`goose session`",
+          "sources": [
+            "goose-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "model": {
+          "text": "`--provider PROVIDER --model MODEL`",
+          "sources": [
+            "goose-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "headless": {
+          "text": "`goose run --text \"PROMPT\"` / `--instructions FILE`",
+          "sources": [
+            "goose-cli"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-t` = `--text`",
+            "`-i` = `--instructions`"
+          ]
+        },
+        "resume": {
+          "text": "`goose session --resume --session-id ID` / `goose run --resume`",
+          "sources": [
+            "goose-cli"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-r` = `--resume`（文脈依存）"
+          ]
+        },
+        "plan": {
+          "text": "`/plan [PROMPT]` / `/endplan`",
+          "sources": [
+            "goose-cli"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "compact": {
+          "text": "`/compact`",
+          "sources": [
+            "goose-cli"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "approval": {
+          "text": "`/mode auto` / `approve` / `smart_approve`。`GOOSE_MODE`設定。",
+          "sources": [
+            "goose-cli",
+            "goose-config"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "goal": {
+          "text": "`goose run --recipe FILE`で定義済み作業。独立したGoal完了検証とは区別。",
+          "sources": [
+            "goose-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "test": {
+          "text": "recipe／指示にテスト→修正を記載。テスト強制ゲートの有無は別途確認。",
+          "sources": [
+            "goose-cli"
+          ],
+          "kind": "MODEL",
+          "aliases": []
+        },
+        "delegate": {
+          "text": "自然言語で並列subagentへ委譲を依頼。専用slash commandではない。",
+          "sources": [
+            "goose-subagents"
+          ],
+          "kind": "MODEL",
+          "aliases": []
+        },
+        "schedule": {
+          "text": "`goose schedule add` / `list` / `run-now`。schedulerの稼働設定が必要。",
+          "sources": [
+            "goose-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "limits": {
+          "text": "`goose run --max-turns N`",
+          "sources": [
+            "goose-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "sandbox": {
+          "text": "組み込みOS隔離の統一CLIフラグは未確認。Docker Model Runnerは推論backendでありagentの隔離ではない。",
+          "sources": [
+            "goose-provider",
+            "goose-cli"
+          ],
+          "kind": "UNVERIFIED",
+          "aliases": []
+        },
+        "extend": {
+          "text": "`goose configure`、`/extension COMMAND`、`/skills`。MCP extensions。",
+          "sources": [
+            "goose-cli",
+            "goose-provider"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "output": {
+          "text": "`goose run --output-format json --text \"PROMPT\"` / `stream-json`",
+          "sources": [
+            "goose-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        }
+      },
+      "notes": [
+        "recipeは作業定義、scheduleは起動条件。成果の正しさの検証と区別する。"
+      ]
+    },
+    {
+      "id": "mistral-vibe",
+      "name": "Mistral Vibe",
+      "upstream": "https://github.com/mistralai/mistral-vibe",
+      "scope": "Vibe Code CLI。Webサービスとは別",
+      "local": {
+        "status": "supported",
+        "protocol": "Chat Completions",
+        "text": "`~/.vibe/config.toml`の`[[providers]]`に`api_base` / `api_style=\"openai\"` / `backend=\"generic\"`、`[[models]]`にモデルを登録。",
+        "sources": [
+          "vibe-local"
+        ]
+      },
+      "commands": {
+        "start": {
+          "text": "`vibe`",
+          "sources": [
+            "vibe-readme"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "model": {
+          "text": "`--model MODEL` / `/model`",
+          "sources": [
+            "vibe-readme",
+            "vibe-commands"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "headless": {
+          "text": "`vibe --prompt \"PROMPT\"`",
+          "sources": [
+            "vibe-readme"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-p` = `--prompt`"
+          ]
+        },
+        "resume": {
+          "text": "`vibe --continue` / `vibe --resume ID`",
+          "sources": [
+            "vibe-readme"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-c` = `--continue`"
+          ]
+        },
+        "plan": {
+          "text": "`vibe --agent plan`",
+          "sources": [
+            "vibe-readme"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "compact": {
+          "text": "`/compact [INSTRUCTIONS]`",
+          "sources": [
+            "vibe-readme"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "approval": {
+          "text": "`--auto-approve`",
+          "sources": [
+            "vibe-readme"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`--yolo` = `--auto-approve`"
+          ]
+        },
+        "goal": {
+          "text": "通常agent loop。独立Goal検証の標準コマンドは今回の資料で未確認。",
+          "sources": [
+            "vibe-readme"
+          ],
+          "kind": "UNVERIFIED",
+          "aliases": []
+        },
+        "test": {
+          "text": "shellでテスト→修正を依頼",
+          "sources": [
+            "vibe-readme"
+          ],
+          "kind": "MODEL",
+          "aliases": []
+        },
+        "delegate": {
+          "text": "組み込みexplore等のsubagent／カスタムagentを構成",
+          "sources": [
+            "vibe-readme"
+          ],
+          "kind": "CONFIG",
+          "aliases": []
+        },
+        "schedule": {
+          "text": "`--prompt`で外部schedulerから起動。`/teleport`はクラウド移送でローカル定期実行ではない。",
+          "sources": [
+            "vibe-readme",
+            "vibe-commands"
+          ],
+          "kind": "EXTENSION",
+          "aliases": []
+        },
+        "limits": {
+          "text": "`--max-turns N` / `--max-tokens N` / `--max-price N`",
+          "sources": [
+            "vibe-readme"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "sandbox": {
+          "text": "`--worktree NAME`はGit分離。OS隔離の標準設定は今回の資料で確定しない。",
+          "sources": [
+            "vibe-readme"
+          ],
+          "kind": "UNVERIFIED",
+          "aliases": []
+        },
+        "extend": {
+          "text": "skills / MCP、`/reload`。設定は`config.toml`。",
+          "sources": [
+            "vibe-readme",
+            "vibe-commands"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "output": {
+          "text": "`vibe -p \"PROMPT\" --output json`",
+          "sources": [
+            "vibe-readme"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        }
+      },
+      "notes": [
+        "完全オフライン目的ではtelemetry / auto update / 外部MCP・connectorも別途設定する。",
+        "価格上限はローカル推論の計算時間上限ではない。"
+      ]
+    },
+    {
+      "id": "kilo",
+      "name": "Kilo Code CLI",
+      "upstream": "https://github.com/Kilo-Org/kilocode",
+      "scope": "現行`kilo` CLI。古いCLI／VS CodeのUI手順を混ぜない",
+      "local": {
+        "status": "supported",
+        "protocol": "Ollama / OpenAI-compatible providers",
+        "text": "`kilo.jsonc`のproviderにローカルendpointとMODELを設定。Ollama / LM Studio / Atomic Chatを公式案内。",
+        "sources": [
+          "kilo-local",
+          "kilo-models"
+        ]
+      },
+      "commands": {
+        "start": {
+          "text": "`kilo`",
+          "sources": [
+            "kilo-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "model": {
+          "text": "`--model provider/MODEL` / `/models`",
+          "sources": [
+            "kilo-cli",
+            "kilo-commands"
+          ],
+          "kind": "MIXED",
+          "aliases": [
+            "`-m` = `--model`"
+          ]
+        },
+        "headless": {
+          "text": "`kilo run \"PROMPT\"`",
+          "sources": [
+            "kilo-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "resume": {
+          "text": "`kilo run --continue \"PROMPT\"` / `--session ID`、`/sessions`",
+          "sources": [
+            "kilo-cli",
+            "kilo-commands"
+          ],
+          "kind": "MIXED",
+          "aliases": [
+            "`-c` = `--continue`",
+            "`-s` = `--session`",
+            "`/resume` / `/continue` = `/sessions`"
+          ]
+        },
+        "plan": {
+          "text": "`--agent NAME` / `/agents`で計画用agentを選択。導入済みagent名を確認。",
+          "sources": [
+            "kilo-cli",
+            "kilo-commands"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "compact": {
+          "text": "`/compact`",
+          "sources": [
+            "kilo-commands"
+          ],
+          "kind": "SLASH",
+          "aliases": [
+            "`/summarize` = `/compact`"
+          ]
+        },
+        "approval": {
+          "text": "`kilo run --auto \"PROMPT\"`。明示denyは残る。",
+          "sources": [
+            "kilo-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "goal": {
+          "text": "通常agent loop／Orchestrator。独立したGoal完了検証の標準コマンドは未確認。",
+          "sources": [
+            "kilo-commands"
+          ],
+          "kind": "UNVERIFIED",
+          "aliases": []
+        },
+        "test": {
+          "text": "テスト実行・修正をagentへ依頼",
+          "sources": [
+            "kilo-commands"
+          ],
+          "kind": "MODEL",
+          "aliases": []
+        },
+        "delegate": {
+          "text": "Orchestrator / custom agents。`kilo agent`で管理。",
+          "sources": [
+            "kilo-commands"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "schedule": {
+          "text": "`kilo serve` / `kilo daemon`。定期タスクの実行は別途構成。",
+          "sources": [
+            "kilo-commands"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "limits": {
+          "text": "汎用の全実行時間フラグは今回のCLI表では未確定。外側で管理。",
+          "sources": [
+            "kilo-cli"
+          ],
+          "kind": "UNVERIFIED",
+          "aliases": []
+        },
+        "sandbox": {
+          "text": "承認設定とOS隔離を別扱い。今回の資料で統一sandboxフラグ未確認。",
+          "sources": [
+            "kilo-cli"
+          ],
+          "kind": "UNVERIFIED",
+          "aliases": []
+        },
+        "extend": {
+          "text": "`kilo mcp` / `kilo plugin MODULE`、skills",
+          "sources": [
+            "kilo-commands"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "output": {
+          "text": "`kilo run --format json \"PROMPT\"`",
+          "sources": [
+            "kilo-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        }
+      },
+      "notes": [
+        "`kilo run -p`はpassword。プロンプトは位置引数。",
+        "CLIの`kilo console`は公式にdeprecatedと案内されている。"
+      ]
+    },
+    {
+      "id": "cline",
+      "name": "Cline CLI",
+      "upstream": "https://github.com/cline/cline",
+      "scope": "現行apps/cliを対象。旧CLIの引数との混在に注意",
+      "local": {
+        "status": "supported",
+        "protocol": "Ollama / LM Studio / OpenAI-compatible",
+        "text": "`cline auth`でprovider / base URLを設定、`--provider` / `--model`で選択。ローカルprovider対応あり。",
+        "sources": [
+          "cline-cli",
+          "cline-local"
+        ]
+      },
+      "commands": {
+        "start": {
+          "text": "`cline` / `cline --tui`",
+          "sources": [
+            "cline-cli"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-i` = `--tui`"
+          ]
+        },
+        "model": {
+          "text": "`--provider PROVIDER --model MODEL`",
+          "sources": [
+            "cline-cli"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-P` = `--provider`",
+            "`-m` = `--model`"
+          ]
+        },
+        "headless": {
+          "text": "`cline --json \"PROMPT\"`。`--yolo`実行もターン完了で終了。",
+          "sources": [
+            "cline-readme"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "resume": {
+          "text": "`cline --id ID`。一覧は`cline history`。",
+          "sources": [
+            "cline-cli"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`cline h` = `cline history`"
+          ]
+        },
+        "plan": {
+          "text": "`cline --plan \"PROMPT\"`",
+          "sources": [
+            "cline-cli"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-p` = `--plan`"
+          ]
+        },
+        "compact": {
+          "text": "`--compaction agentic` / `basic` / `off`。手動slashとは別。",
+          "sources": [
+            "cline-readme"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "approval": {
+          "text": "`--auto-approve true` / `--yolo`。yoloはspawn/teamを既定で無効化する。",
+          "sources": [
+            "cline-cli",
+            "cline-readme"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-y` = `--yolo`"
+          ]
+        },
+        "goal": {
+          "text": "単発終了・background hubあり。独立Goal判定の正式コマンドは今回の資料で未確認。",
+          "sources": [
+            "cline-readme"
+          ],
+          "kind": "UNVERIFIED",
+          "aliases": []
+        },
+        "test": {
+          "text": "ツールでテスト→修正を依頼",
+          "sources": [
+            "cline-readme"
+          ],
+          "kind": "MODEL",
+          "aliases": []
+        },
+        "delegate": {
+          "text": "spawn/team機能あり。ただしyolo/zenでは既定無効。",
+          "sources": [
+            "cline-readme"
+          ],
+          "kind": "MIXED",
+          "aliases": []
+        },
+        "schedule": {
+          "text": "`cline schedule create`、`cline --zen \"PROMPT\"`はhubへ背景投入。",
+          "sources": [
+            "cline-readme"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-z` = `--zen`"
+          ]
+        },
+        "limits": {
+          "text": "`--timeout SECONDS` / `--retries N`。retriesは連続mistake上限。",
+          "sources": [
+            "cline-cli"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-t` = `--timeout`"
+          ]
+        },
+        "sandbox": {
+          "text": "`--data-dir PATH`で状態分離／sandbox mode。ただしOSレベルの隔離保証は別途確認。",
+          "sources": [
+            "cline-readme"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "extend": {
+          "text": "`cline mcp` / `cline plugin`、hooks / skills",
+          "sources": [
+            "cline-cli",
+            "cline-readme"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "output": {
+          "text": "`--json`でNDJSON / `--acp`",
+          "sources": [
+            "cline-readme"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        }
+      },
+      "notes": [
+        "`-p`はpromptではなくplan、`-c`はcontinueではなくcwd。",
+        "公式CLI referenceとREADMEでdefault値に差があるため、既定のauto approval / compaction値は断定しない。",
+        "hubに投入してCLIが終了したことは、タスク成功を意味しない。"
+      ]
+    },
+    {
+      "id": "gemini-cli",
+      "name": "Gemini CLI",
+      "upstream": "https://github.com/google-gemini/gemini-cli",
+      "scope": "Google公式CLI。本体を改造したforkやQwen Codeとは別",
+      "local": {
+        "status": "unverified",
+        "protocol": "公式経路はGemini API / Vertex AI",
+        "text": "公式認証・設定資料では、任意のローカルQwen Chat Completionsサーバーへ直接つなぐ標準経路を確認できなかった。不可能という断定ではない。",
+        "sources": [
+          "gemini-auth",
+          "gemini-config"
+        ]
+      },
+      "commands": {
+        "start": {
+          "text": "`gemini`",
+          "sources": [
+            "gemini-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "model": {
+          "text": "`--model MODEL`。モデル名指定だけで任意ローカルproviderへ変わるわけではない。",
+          "sources": [
+            "gemini-cli",
+            "gemini-auth"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-m` = `--model`"
+          ]
+        },
+        "headless": {
+          "text": "`gemini --prompt \"PROMPT\"`",
+          "sources": [
+            "gemini-cli"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-p` = `--prompt`"
+          ]
+        },
+        "resume": {
+          "text": "`gemini --resume latest` / `--resume ID`",
+          "sources": [
+            "gemini-cli",
+            "gemini-config"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-r` = `--resume`"
+          ]
+        },
+        "plan": {
+          "text": "`--approval-mode plan`。headlessでは実装へ自動遷移する挙動あり。",
+          "sources": [
+            "gemini-plan"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "compact": {
+          "text": "`/compress`",
+          "sources": [
+            "gemini-commands"
+          ],
+          "kind": "SLASH",
+          "aliases": []
+        },
+        "approval": {
+          "text": "`--approval-mode yolo`。古い`--yolo`はcheatsheetでdeprecated。",
+          "sources": [
+            "gemini-cli"
+          ],
+          "kind": "CLI",
+          "aliases": []
+        },
+        "goal": {
+          "text": "ローカルLLMでの自律Goalは未検証。通常のheadless agent loopとは区別。",
+          "sources": [
+            "gemini-cli",
+            "gemini-auth"
+          ],
+          "kind": "UNVERIFIED",
+          "aliases": []
+        },
+        "test": {
+          "text": "シェルでテスト→修正を依頼。ローカルQwen対応を意味しない。",
+          "sources": [
+            "gemini-config"
+          ],
+          "kind": "MODEL",
+          "aliases": []
+        },
+        "delegate": {
+          "text": "`/agents list` / `/agents reload`等でsubagentを管理。ローカルQwen接続は未確認。",
+          "sources": [
+            "gemini-commands"
+          ],
+          "kind": "SLASH",
+          "aliases": [
+            "`/agents refresh` = `/agents reload`"
+          ]
+        },
+        "schedule": {
+          "text": "headlessを外部schedulerで起動する構成",
+          "sources": [
+            "gemini-cli"
+          ],
+          "kind": "EXTENSION",
+          "aliases": []
+        },
+        "limits": {
+          "text": "`model.maxSessionTurns`等の設定。導入版のschemaを確認。",
+          "sources": [
+            "gemini-config"
+          ],
+          "kind": "CONFIG",
+          "aliases": []
+        },
+        "sandbox": {
+          "text": "`--sandbox`",
+          "sources": [
+            "gemini-cli"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-s` = `--sandbox`"
+          ]
+        },
+        "extend": {
+          "text": "extensions / MCP / skills / hooks",
+          "sources": [
+            "gemini-config"
+          ],
+          "kind": "CONFIG",
+          "aliases": []
+        },
+        "output": {
+          "text": "`--output-format json` / `stream-json`",
+          "sources": [
+            "gemini-cli"
+          ],
+          "kind": "CLI",
+          "aliases": [
+            "`-o` = `--output-format`"
+          ]
+        }
+      },
+      "notes": [
+        "Gemini CLIとそのforkであるQwen Codeのprovider対応を混同しない。",
+        "ローカル接続を必須条件にした候補選びでは保留。"
+      ]
+    }
+  ],
+  "verification": {
+    "end_to_end_model_runs": false,
+    "local_cli_help": [
+      {
+        "command": "codex --help / codex --version",
+        "version": "0.154.0",
+        "checked_on": "2026-09-13"
+      }
+    ],
+    "scope_note": "HTTP 200やhelpの確認はローカルLLMによるタスク完走の検証ではない。"
+  }
+}
