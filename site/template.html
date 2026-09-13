@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>ローカルLLM ハーネス比較 — 全{{COUNT}}項目</title>
+  <meta name="description" content="全{{COUNT}}ハーネスのローカルLLM接続、コマンド、自律運用を1つの比較表で。一次資料・正式エイリアスも各セルで確認できます。">
+  <link rel="canonical" href="https://ootsuka-repos.github.io/local-llm-harness-comparison/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/table.js" defer></script>
+</head>
+<body>
+  <main>
+    <header class="page-header">
+      <div class="heading">
+        <p class="eyebrow"><span aria-hidden="true" class="brand-mark">▦</span> LOCAL LLM / HARNESS COMPARISON</p>
+        <h1>ローカルLLM <span>ハーネス比較</span></h1>
+      </div>
+      <div class="page-meta"><span class="total">全 <strong>{{COUNT}}</strong> 項目</span><span>確認日 <time datetime="{{CHECKED_ON}}">{{CHECKED_ON}}</time></span></div>
+    </header>
+    <div class="table-meta" id="table-help">
+      <span>セルを選択すると、正式コマンド・条件・出典を表示</span>
+      <span class="legend"><span class="legend-standard">標準の操作・設定</span><span class="legend-external">拡張・外部実装</span><span class="legend-unknown">未確認</span><span class="scroll-hint">横スクロール →</span></span>
+    </div>
+    <div class="table-scroll" role="region" aria-label="全{{COUNT}}ハーネスの比較表。矢印キーでスクロールできます" aria-describedby="table-help table-note" tabindex="0">
+      <table>
+        <caption class="sr-only">全{{COUNT}}ハーネスのローカル接続と15機能の比較</caption>
+        {{TABLE}}
+      </table>
+    </div>
+    <p class="table-note" id="table-note"><span>接続経路の比較・完走は未実測。「未確認」は非対応の断定ではありません。</span><span>Chat = Chat Completions · Resp. = Responses · Msg. = Anthropic Messages</span></p>
+  </main>
+  {{DETAILS}}
+</body>
+</html>

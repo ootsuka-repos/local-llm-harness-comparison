@@ -1,6 +1,6 @@
 {
   "audited_at_utc": "2026-09-12T20:08:32.273876+00:00",
-  "note": "HTTP/content audit only; not semantic verification or end-to-end model testing.",
+  "note": "HTTP/content audit only; not semantic verification or end-to-end model testing. Added sources record their own audited_at_utc; existing records retain the original audit timestamp.",
   "sources": [
     {
       "source_id": "codex-cli",
@@ -676,6 +676,116 @@
       "final_url": "https://raw.githubusercontent.com/aaif-goose/goose/50666ae0b9a51e260b52b7efbab2e4e020346e94/documentation/docs/tutorials/subagents.md",
       "bytes": 13835,
       "sha256": "9ceac93ffdf2f58aea9905e8529a49348e4a5c341be8d59dc03939a850c6aeb8"
+    },
+    {
+      "source_id": "oc-ollama",
+      "url": "https://github.com/openclaw/openclaw/blob/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/providers/ollama/configuration.md",
+      "fetch_url": "https://raw.githubusercontent.com/openclaw/openclaw/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/providers/ollama/configuration.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/openclaw/openclaw/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/providers/ollama/configuration.md",
+      "bytes": 2317,
+      "sha256": "af971e144a671a20a6a36bfa8f7cf6ebaa8912013161ed18de4ff47311f4a6df",
+      "audited_at_utc": "2026-09-13T10:27:10.935124+00:00"
+    },
+    {
+      "source_id": "oc-agent",
+      "url": "https://github.com/openclaw/openclaw/blob/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/cli/agent.md",
+      "fetch_url": "https://raw.githubusercontent.com/openclaw/openclaw/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/cli/agent.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/openclaw/openclaw/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/cli/agent.md",
+      "bytes": 25793,
+      "sha256": "0cb08df703ff86f9bfe0cf876a0bad37734e24f377d1591bf1c3e977f187a72e",
+      "audited_at_utc": "2026-09-13T10:27:10.935124+00:00"
+    },
+    {
+      "source_id": "oc-tui",
+      "url": "https://github.com/openclaw/openclaw/blob/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/cli/tui.md",
+      "fetch_url": "https://raw.githubusercontent.com/openclaw/openclaw/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/cli/tui.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/openclaw/openclaw/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/cli/tui.md",
+      "bytes": 9554,
+      "sha256": "103a9bc58c535e74a624743f7de557b1b7be891e9830e87d9b0adee15a5200e2",
+      "audited_at_utc": "2026-09-13T10:27:10.935124+00:00"
+    },
+    {
+      "source_id": "oc-resume",
+      "url": "https://github.com/openclaw/openclaw/blob/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/cli/resume.md",
+      "fetch_url": "https://raw.githubusercontent.com/openclaw/openclaw/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/cli/resume.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/openclaw/openclaw/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/cli/resume.md",
+      "bytes": 6799,
+      "sha256": "68656e28446d54c8b836d067d0cc96bd147c216f1f58bc322fd8110165afa771",
+      "audited_at_utc": "2026-09-13T10:27:10.935124+00:00"
+    },
+    {
+      "source_id": "oc-slash",
+      "url": "https://github.com/openclaw/openclaw/blob/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/tools/slash-commands.md",
+      "fetch_url": "https://raw.githubusercontent.com/openclaw/openclaw/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/tools/slash-commands.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/openclaw/openclaw/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/tools/slash-commands.md",
+      "bytes": 37964,
+      "sha256": "6e31facc56eff094955758aad1981c6e4e076f8def1e44cf4ec2cbd5f851ad42",
+      "audited_at_utc": "2026-09-13T10:27:10.935124+00:00"
+    },
+    {
+      "source_id": "oc-goal",
+      "url": "https://github.com/openclaw/openclaw/blob/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/tools/goal.md",
+      "fetch_url": "https://raw.githubusercontent.com/openclaw/openclaw/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/tools/goal.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/openclaw/openclaw/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/tools/goal.md",
+      "bytes": 15175,
+      "sha256": "30a91caec019918d4467f44f9a7782a5a1a124acba49c52f3f3f0c0d23d36e70",
+      "audited_at_utc": "2026-09-13T10:27:10.935124+00:00"
+    },
+    {
+      "source_id": "oc-approvals",
+      "url": "https://github.com/openclaw/openclaw/blob/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/cli/approvals.md",
+      "fetch_url": "https://raw.githubusercontent.com/openclaw/openclaw/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/cli/approvals.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/openclaw/openclaw/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/cli/approvals.md",
+      "bytes": 11372,
+      "sha256": "804a5e1009462687278c03155a276a8d1197ffd209e895c4cc9c168432b5bb26",
+      "audited_at_utc": "2026-09-13T10:27:10.935124+00:00"
+    },
+    {
+      "source_id": "oc-subagents",
+      "url": "https://github.com/openclaw/openclaw/blob/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/tools/subagents.md",
+      "fetch_url": "https://raw.githubusercontent.com/openclaw/openclaw/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/tools/subagents.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/openclaw/openclaw/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/tools/subagents.md",
+      "bytes": 12118,
+      "sha256": "b8cce1e08340267db5067a60e35f65bd86bd1c174769c5ba37016bfb64bb1247",
+      "audited_at_utc": "2026-09-13T10:27:10.935124+00:00"
+    },
+    {
+      "source_id": "oc-cron",
+      "url": "https://github.com/openclaw/openclaw/blob/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/cli/cron.md",
+      "fetch_url": "https://raw.githubusercontent.com/openclaw/openclaw/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/cli/cron.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/openclaw/openclaw/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/cli/cron.md",
+      "bytes": 29511,
+      "sha256": "119ef7fd6e3bb819b9955529f127e651f30b08c8e9af731070347b342d81cffc",
+      "audited_at_utc": "2026-09-13T10:27:10.935124+00:00"
+    },
+    {
+      "source_id": "oc-sandbox",
+      "url": "https://github.com/openclaw/openclaw/blob/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/gateway/sandboxing.md",
+      "fetch_url": "https://raw.githubusercontent.com/openclaw/openclaw/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/gateway/sandboxing.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/openclaw/openclaw/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/gateway/sandboxing.md",
+      "bytes": 8613,
+      "sha256": "4c48508e7f1cfa91bcf0e57d6b2ace709bcb38dfd5983eee5cbdd343a6f094fc",
+      "audited_at_utc": "2026-09-13T10:27:10.935124+00:00"
+    },
+    {
+      "source_id": "oc-mcp",
+      "url": "https://github.com/openclaw/openclaw/blob/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/cli/mcp.md",
+      "fetch_url": "https://raw.githubusercontent.com/openclaw/openclaw/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/cli/mcp.md",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/openclaw/openclaw/be3d809cf6908d5fda20a31586b3887c32d29bd1/docs/cli/mcp.md",
+      "bytes": 11655,
+      "sha256": "307b5552d3f4146c6b6d6b283468d8dc7a9ecaf1e9cc2f6fc629836b579ec9a4",
+      "audited_at_utc": "2026-09-13T10:27:10.935124+00:00"
     }
   ]
 }
