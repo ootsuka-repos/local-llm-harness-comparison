@@ -2,6 +2,7 @@
 """Render the single-page comparison and CSV using only the standard library."""
 import argparse
 import csv
+import hashlib
 import io
 import json
 import re
@@ -18,6 +19,7 @@ LABELS = {
     "output": "機械可読出力",
 }
 KINDS = {"CLI", "SLASH", "CONFIG", "SDK", "EXTENSION", "MODEL", "UI", "UNVERIFIED", "NONE", "MIXED"}
+COMMAND_MARKERS = KINDS | {"AGENT LOOP", "UI / SDK", "SDK / EXTERNAL", "EXTERNAL"}
 GROUPS = [
     ("基本操作", ["start", "model", "headless", "resume", "plan", "compact"]),
     ("自律運用", ["goal", "test", "delegate", "schedule"]),
@@ -53,7 +55,12 @@ def validate(data):
         for c in h["commands"].values():
             assert c["kind"] in KINDS
             assert isinstance(c["aliases"], list)
-            assert c['summary'], h['id']
+            summary = c['summary']
+            assert summary and summary.isascii(), f'{h["id"]}: command cells must not paraphrase syntax in Japanese'
+            if summary not in COMMAND_MARKERS:
+                assert re.fullmatch(r'`[^`\n]+`', summary), f'{h["id"]}: use literal code or an explicit operation marker'
+                reviewed_text = ' '.join([c['text'], *c['aliases']])
+                assert summary[1:-1] in reviewed_text, f'{h["id"]}: display syntax must exist in the reviewed entry'
         assert h["notes"] and h["scope"]
         assert h['display_name'] and h['upstream'].startswith('https://')
         assert h['local']['protocol_summary']
@@ -110,6 +117,7 @@ def render_page(data):
     template = (ROOT / 'site/template.html').read_text()
     replacements = {
         'CHECKED_ON': escape(data['checked_on']), 'COUNT': str(len(data['harnesses'])),
+        'ASSET_VERSION': hashlib.sha256((ROOT / 'assets/style.css').read_bytes() + (ROOT / 'assets/table.js').read_bytes()).hexdigest()[:12],
         'TABLE': table_head + '\n<tbody>\n' + '\n'.join(rows) + '\n</tbody>',
         'DETAILS': '\n'.join(popovers),
     }

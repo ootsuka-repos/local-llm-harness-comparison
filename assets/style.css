@@ -31,7 +31,7 @@ time { margin-left: 5px; font-variant-numeric: tabular-nums; }
 .legend-external { color: #866a38; }
 .legend-unknown { color: #858c85; }
 .table-scroll { overflow: auto; max-height: calc(100svh - 167px); border: 1px solid var(--strong-line); border-radius: 7px; background: white; scrollbar-width: thin; scrollbar-color: #b9c6b8 #edf0e9; overscroll-behavior: contain; }
-table { width: 100%; min-width: 1372px; table-layout: fixed; border-spacing: 0; text-align: center; font-size: 11px; }
+table { width: 100%; min-width: 1372px; table-layout: auto; border-spacing: 0; text-align: center; font-size: 11px; }
 .name-col { width: 172px; }
 .local-col { width: 78px; }
 .api-col { width: 120px; }
@@ -50,11 +50,12 @@ tbody tr:nth-child(even) > * { background: #fafbf8; }
 tbody tr:last-child > * { border-bottom: 0; }
 tbody tr:hover > *, tbody tr:focus-within > * { background: #f0f5ed; }
 .group-start { border-left: 1px solid var(--strong-line); }
-.cell-button { border: 0; background: transparent; width: 100%; min-height: 37px; padding: 4px 3px; font-size: 11.5px; line-height: 1.25; overflow-wrap: anywhere; color: var(--green); }
+.cell-button { border: 0; background: transparent; width: 100%; min-height: 37px; padding: 4px 9px; font-size: 11.5px; line-height: 1.25; white-space: nowrap; color: var(--green); }
+.cell-button:not(:has(code)) { font-size: 10px; }
 .cell-button:hover { background: #e5eee1; }
 .cell-button[aria-expanded="true"] { background: #dcebd6; box-shadow: inset 0 0 0 1px #86ad7e; }
 code { font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace; font-size: .96em; }
-.name-button { display: flex; gap: 9px; width: 100%; min-height: 37px; border: 0; background: transparent; align-items: center; text-align: left; padding: 3px 10px; }
+.name-button { display: flex; gap: 9px; width: 172px; min-height: 37px; border: 0; background: transparent; align-items: center; text-align: left; padding: 3px 10px; }
 .row-number { color: #a1aa9f; font: 9px/1 ui-monospace, SFMono-Regular, Consolas, monospace; min-width: 13px; }
 .product-name { font-size: 13px; line-height: 1.35; font-weight: 600; letter-spacing: -.2px; }
 .product-badge { display: block; color: #6f7c68; font-size: 8px; line-height: 1.2; font-weight: 400; letter-spacing: .2px; }
@@ -87,7 +88,8 @@ code { font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", m
 .detail-sources a { display: block; color: #4b7252; font-size: 10px; line-height: 1.5; margin: 7px 0 0; text-decoration: none; overflow-wrap: anywhere; }
 .detail-sources a:hover, .official-link:hover { text-decoration: underline; }
 .official-link { color: var(--green); font-size: 11px; text-decoration: none; }
-.legend .scroll-hint { display: none; }
+.legend .scroll-hint { display: inline-flex; color: #52694e; }
+.legend .scroll-hint::before { display: none; }
 @media (min-width: 1700px) {
   main { padding: 30px 32px 18px; }
   table { font-size: 12px; }
@@ -117,10 +119,10 @@ code { font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", m
   .table-note > span { display: block; margin-top: 3px; }
   .name-col { width: 158px; }
   .product-name { font-size: 11px; }
-  .name-button { gap: 7px; padding-left: 8px; }
+  .name-button { width: 158px; gap: 7px; padding-left: 8px; }
   .name-arrow { display: none; }
   tbody tr { height: 33px; }
-  .cell-button { min-height: 32px; padding: 2px 3px; font-size: 11px; }
+  .cell-button { min-height: 32px; padding: 2px 9px; font-size: 11px; }
   .name-button { min-height: 32px; }
   .api-cell .cell-button { padding: 2px 9px; }
 }
@@ -130,6 +132,7 @@ code { font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", m
   main { max-width: none; padding: 0; }
   .table-scroll { overflow: visible; max-height: none; }
   table { min-width: 0; }
+  .cell-button { white-space: normal; overflow-wrap: anywhere; }
   thead { position: static; }
   tbody th, .name-head { position: static; }
   tbody tr { break-inside: avoid; }
